@@ -3,8 +3,19 @@
 <head>
 	<title>Urban Grounds</title>
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script type="text/javascript" src="script/app.js"></script>
+	<script type="text/javascript" src="script/selectCtrl.js"></script>
+	<script type="text/javascript" src="script/displayCtrl.js"></script>
+	<script type="text/javascript" src="script/service.js"></script>
 </head>
-<body>
+<body ng-app="app">
 	<h1>Urban Grounds</h1>
+	<ul>
+		<li><a href="#/">Home</a></li>
+		<li><a href="#/coffeeshop">Coffee Shop</a></li>
+	</ul> 
+	<ng-view></ng-view>
 </body>
 </html>
