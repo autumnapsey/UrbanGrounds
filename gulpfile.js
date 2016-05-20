@@ -8,7 +8,7 @@ var stylus = require("gulp-stylus");
 gulp.task("style", function(){
 	return gulp.src('./main.styl')
 		.pipe(stylus())
-		.pipe(gulp.dest("./style"));
+		.pipe(gulp.dest("./public/style"));
 });
 
 gulp.task('jshint', function(){
@@ -20,12 +20,9 @@ gulp.task('jshint', function(){
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./public"
         }
     });
 	gulp.watch(["*.html", "*.js", "*.styl"], ["jshint", 'style'])
 	.on("change", browserSync.reload);
 });
-
-
-// https://www.youtube.com/c/leveluptuts

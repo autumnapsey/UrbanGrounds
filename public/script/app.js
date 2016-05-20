@@ -7,7 +7,7 @@ app.config(function($routeProvider) {
 		controller: 'selectCtrl'
 	})
 	.when('/coffeeshop', {
-		templateUrl: '../view/selectCtrl.html',
+		templateUrl: '../view/coffee.html',
 		controller: 'displayCtrl'
 	});
 });
