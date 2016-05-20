@@ -1,6 +1,10 @@
 var app = angular.module('app');
 
-app.controller('selectCtrl', function($scope, coffeeService) {
-	console.log('hello from the selectCtrl!');
-	console.log(coffeeService);
+app.controller('selectCtrl', function($scope, coffeeService, $location) {
+	console.log('Hi from selectCtrl');
+	$scope.chooseShop = function (num){
+		console.log(num);
+		coffeeService.getShop(num);
+		$location.path('/coffeeshop')
+	}
 });
