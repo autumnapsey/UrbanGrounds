@@ -1,5 +1,5 @@
 var app = angular.module('app');
 
-app.factory('coffeeService', function($http){
+app.factory('coffeeService', function(){
 	return 'Service is speaking!';
 });
