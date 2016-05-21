@@ -1,2 +1,10 @@
 This is where the coffee shop info will go.
 <p>{{coffeeShop.formatted_address}}</p>
+
+
+
+
+<!-- filter results below - Veronica -->
+<div ng-controller="MyCtrl">
+     {{shops | exactMatch:'music'}} 
+</div>
