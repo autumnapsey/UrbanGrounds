@@ -1,1 +1,30 @@
-Welcome to the home page!
+<h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
+<ul ng-show="downtownList">
+	<li ng-click="chooseShop(0)">ASHE</li>
+	<li ng-click="chooseShop(1)">Urban Bean</li>
+	<li ng-click="chooseShop(2)">Roasting Plant</li>
+	<li ng-click="chooseShop(3)">Rowland Cafe</li>
+	<li ng-click="chooseShop(4)">Dessert Oasis Coffee Roasters</li>
+	<li ng-click="chooseShop(5)">The Bean Bar</li>
+</ul>
+
+<h3 ng-click="midtownList = !midtownList" id="midtown">Midtown</h3>
+<ul ng-show="midtownList">
+	<li ng-click="chooseShop(6)">The Bottom Line Coffee House</li>
+	<li ng-click="chooseShop(7)">Fourteen East</li>
+	<li ng-click="chooseShop(8)">Great Lakes Coffee</li>
+	<li ng-click="chooseShop(9)">Avalon Internation Breads</li>
+	<li ng-click="chooseShop(10)">SoCRA Tea</li>
+</ul>
+
+<h3 ng-click="newcenterList = !newcenterList" id="newcenter">New Center</h3>
+<ul ng-show="newcenterList">
+	<li ng-click="chooseShop(11)">Café Con Leche</li>
+	<li ng-click="chooseShop(12)">Stella International Cafe</li>
+</ul>
+
+<h3 ng-click="corktownList = !corktownList" id="corktown">Corktown</h3>
+<ul ng-show="corktownList">
+	<li ng-click="chooseShop(13)">Astro Coffee</li>
+	<li ng-click="chooseShop(14)">Anthology Coffee</li>
+</ul>

@@ -1,6 +1,8 @@
 var app = angular.module('app');
 
 app.controller('displayCtrl', function($scope, coffeeService) {
-	console.log('hello from the dislayCtrl!');
-	console.log(coffeeService);
+	coffeeService.getLink().then(function(location){
+		$scope.coffeeShop = location.data.result;
+		console.log(location);
+	});
 });
