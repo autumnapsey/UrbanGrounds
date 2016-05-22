@@ -8,9 +8,9 @@ app.controller('selectCtrl', function($scope, coffeeService) {
 
 
 
-//var myApp = angular.module('myApp',[]);
+// //var myApp = angular.module('myApp',[]);
 
-//filter functions below-Veronica
+// //filter functions below-Veronica
 
 myApp.filter('exactMatch', function() {
     return function(shops, pattern) {
