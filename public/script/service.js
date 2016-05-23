@@ -17,6 +17,11 @@ app.factory('coffeeService', function($http){
 	'ChIJ-cn5BZ3SJIgR9qtC5wf-TtY', //Stella 
 	'ChIJQZSTxVktO4gR_qjDkKNYauk', //Astro
 	'ChIJp-Jg8VwtO4gRJKYZBSShFTg', //Anthology
+	'ChIJY2gfQ17TJIgRCC-Ib8eakH8', //Red Hook
+	'ChIJ6eXdWAfVJIgRw_BSGXWh7gs', //Coffee and ()
+	'ChIJw-es3tXSJIgRnzz7A_tsOOQ', //Trinosophes
+	'ChIJZS3wv9bSJIgRMcmDKePqdLQ', //Germack
+	'ChIJ5aZkHGrKJIgR7-jlmpGsSH4', //Always Brewing
 
 	];
 
