@@ -2,9 +2,12 @@ var app = angular.module('app');
 
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.chooseShop = function (region,num){
+		console.log(region);
 		coffeeService.getShop(region,num);
 		$location.path('/coffeeshop')
 	};
+
+	$scope.places = coffeeService.places;
 
 	$scope.downtownList = false;
 	$scope.midtownList = false;
