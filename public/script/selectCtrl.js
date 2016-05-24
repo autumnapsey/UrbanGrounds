@@ -21,4 +21,8 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	// $scope.social = false;
 	// $scope.art = false;
 	// $scope.food = false;
+
+	$scope.categoryChoice = function(topic){
+		
+	}
 });
