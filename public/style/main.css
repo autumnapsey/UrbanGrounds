@@ -2,3 +2,6 @@ body {
   background-color: #abc;
   font-family: arial;
 }
+.boldText {
+  font-weight: bold;
+}

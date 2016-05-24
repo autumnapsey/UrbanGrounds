@@ -1,14 +1,18 @@
-
-This is where the coffee shop info will go.
-<p>{{coffeeShop.formatted_address}}</p>
-
 <div>
-	<p>{{coffeeShop.formatted_address}}</p>
-	<p>{{coffeeShop.formatted_phone_number}}</p>
-	<p>{{coffeeShop.name}}</p>
-	<p>Open now? {{coffeeShop.opening_hours.open_now}}</p>
-	<p>{{coffeeShop.opening_hours.weekday_text}}</p>
-	<p>Rating: {{coffeeShop.rating}}</p>
-
-
+	<h2>{{coffeeShop.name}}</h2>
+	<p><span class="boldText">Address: </span>{{coffeeShop.formatted_address}}</p>
+	<p><span class="boldText">Phone: </span>{{coffeeShop.formatted_phone_number}}</p>
+	<p><span class="boldText">{{openNow()}}</span></p>
+	<p><span class="boldText">Weekly Hours:</span></p>
+		<p>
+		{{coffeeShop.opening_hours.weekday_text[0]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[1]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[2]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[3]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[4]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[5]}}<br />
+		{{coffeeShop.opening_hours.weekday_text[6]}}<br />
+		</p>
+	<p><span class="boldText">Rating: </span> {{coffeeShop.rating}}</p>
+	<p><span class="boldText">Website: </span> <a href="{{coffeeShop.website}}">{{coffeeShop.website}}</a></p>
 </div>
