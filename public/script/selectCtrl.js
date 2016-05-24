@@ -1,8 +1,8 @@
 var app = angular.module('app');
 
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
-	$scope.chooseShop = function (num){
-		coffeeService.getShop(num);
+	$scope.chooseShop = function (region,num){
+		coffeeService.getShop(region,num);
 		$location.path('/coffeeshop')
 	};
 
@@ -23,6 +23,6 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	// $scope.food = false;
 
 	$scope.categoryChoice = function(topic){
-		
+
 	}
 });

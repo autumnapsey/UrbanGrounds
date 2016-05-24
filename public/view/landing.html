@@ -1,67 +1,67 @@
 <h2>What are you interested in doing?</h2>
 <ul>
-	<li ng-click="music = !music">Music/Open Mic</li>
-	<li ng-click="work = !work">Work/study</li>
-	<li ng-click="food = !food">Food/Desserts</li>
-	<li ng-click="social = !social">Social</li>
-	<li ng-click="art = !art">Art</li>
+	<li ng-click="categoryChoice()">Music/Open Mic</li>
+	<li ng-click="categoryChoice()">Work/study</li>
+	<li ng-click="categoryChoice()">Food/Desserts</li>
+	<li ng-click="categoryChoice()">Social</li>
+	<li ng-click="categoryChoice()">Art</li>
 </ul>
 
 <h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
 <ul ng-show="downtownList">
-	<li ng-click="chooseShop(0)">ASHE</li>
-	<li ng-click="chooseShop(1)">Urban Bean</li>
-	<li ng-click="chooseShop(2)">Roasting Plant</li>
-	<li ng-click="chooseShop(3)">Rowland Cafe</li>
-	<li ng-click="chooseShop(4)">Dessert Oasis Coffee Roasters</li>
-	<li ng-click="chooseShop(5)">The Bean Bar</li>
+	<li ng-click="chooseShop(0,0)">ASHE</li>
+	<li ng-click="chooseShop(0,1)">Urban Bean</li>
+	<li ng-click="chooseShop(0,2)">Roasting Plant</li>
+	<li ng-click="chooseShop(0,3)">Rowland Cafe</li>
+	<li ng-click="chooseShop(0,4)">Dessert Oasis Coffee Roasters</li>
+	<li ng-click="chooseShop(0,5)">The Bean Bar</li>
 </ul>
 
 <h3 ng-click="midtownList = !midtownList" id="midtown">Midtown</h3>
 <ul ng-show="midtownList">
-	<li ng-click="chooseShop(6)">The Bottom Line Coffee House</li>
-	<li ng-click="chooseShop(7)">Fourteen East</li>
-	<li ng-click="chooseShop(8)">Great Lakes Coffee</li>
-	<li ng-click="chooseShop(9)">Avalon Internation Breads</li>
-	<li ng-click="chooseShop(10)">SoCRA Tea</li>
+	<li ng-click="chooseShop(1,6)">The Bottom Line Coffee House</li>
+	<li ng-click="chooseShop(1,7)">Fourteen East</li>
+	<li ng-click="chooseShop(1,8)">Great Lakes Coffee</li>
+	<li ng-click="chooseShop(1,9)">Avalon Internation Breads</li>
+	<li ng-click="chooseShop(1,10)">SoCRA Tea</li>
 </ul>
 
 <h3 ng-click="newcenterList = !newcenterList" id="newcenter">New Center</h3>
 <ul ng-show="newcenterList">
-	<li ng-click="chooseShop(11)">Café Con Leche</li>
-	<li ng-click="chooseShop(12)">Stella International Cafe</li>
+	<li ng-click="chooseShop(2,11)">Café Con Leche</li>
+	<li ng-click="chooseShop(2,12)">Stella International Cafe</li>
 </ul>
 
 <h3 ng-click="corktownList = !corktownList" id="corktown">Corktown</h3>
 <ul ng-show="corktownList">
-	<li ng-click="chooseShop(13)">Astro Coffee</li>
-	<li ng-click="chooseShop(14)">Anthology Coffee</li>
+	<li ng-click="chooseShop(3,13)">Astro Coffee</li>
+	<li ng-click="chooseShop(3,14)">Anthology Coffee</li>
 </ul>
 
 <h3 ng-click="westVillageList = !westVillageList" id="westVillage">West Village</h3>
 	<ul ng-show="westVillageList">
-		<li ng-click="chooseShop(15)">The Red Hook</li>
+		<li ng-click="chooseShop(4,15)">The Red Hook</li>
 	</ul>
 
 <h3 ng-click="jeffersonList = !jeffersonList" id="jefferson">Jefferson and Chalmers</h3>
 	<ul ng-show="jeffersonList">
-		<li ng-click="chooseShop(16)">Coffee and (______)</li>
+		<li ng-click="chooseShop(5,16)">Coffee and (______)</li>
 	</ul>
 
 <h3 ng-click="hamtramckList = !hamtramckList" id="hamtramck">Hamtramck</h3>
 	<ul ng-show="hamtramckList">
-		<li ng-click="chooseShop(17)">Cafe 1923</li>
+		<li ng-click="chooseShop(8,17)">Cafe 1923</li>
 	</ul>
 
 <h3 ng-click="easternMarketList = !easternMarketList" id="easternMarket">Eastern Market</h3>
 	<ul ng-show="easternMarketList">
-		<li ng-click="chooseShop(18)">Trinosophes</li>
-		<li ng-click="chooseShop(19)">Germack Coffee Roasting Co.</li>
+		<li ng-click="chooseShop(6,18)">Trinosophes</li>
+		<li ng-click="chooseShop(6,19)">Germack Coffee Roasting Co.</li>
 	</ul>
 
 <h3 ng-click="rosedaleParkList = !rosedaleParkList" id="rosedalePark">Rosedale Park</h3>
 	<ul ng-show="rosedaleParkList">
-		<li ng-click="chooseShop(20)">Always Brewing Detroit</li>
+		<li ng-click="chooseShop(7,20)">Always Brewing Detroit</li>
 	</ul>
 
 
