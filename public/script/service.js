@@ -1,46 +1,47 @@
 var app = angular.module('app');
 
 app.factory('coffeeService', function($http){
-	var places = [
-		[ //Downtown (0)
-			{
-			name: 'ASHE Supply Co.',
-			placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
-			description: '',
-			features: ''
-			},
-			{
-			name: 'Urban Bean Co.',
-			placeID: 'ChIJt7odBjEtO4gRgRETxl3QoLE',
-			description: '',
-			features: ''
-			},
-			{
-			name: 'Roasting Plant',
-			placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
-			description: '',
-			features: ''
-			},
-			{
-			name: 'Rowland Cafe',
-			placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
-			description: '',
-			features: ''
-			},
-			{
-			name: 'Dessert Oasis',
-			placeID: 'ChIJzZVcTTAtO4gRe5sIIK-MgJs',
-			description: '',
-			features: ''
-			},
-			{
-			name: 'The Bean Bar',
-			placeID: 'ChIJdyYY-zotO4gRSkl3yFB0L4U',
-			description: '',
-			features: ''
-			}
-		],
-		[  //Midtown (1)
+	var places = {
+		downtown: 
+			[
+				{
+				name: 'ASHE Supply Co.',
+				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
+				description: '',
+				features: '',
+				},
+				{
+				name: 'Urban Bean Co.',
+				placeID: 'ChIJt7odBjEtO4gRgRETxl3QoLE',
+				description: '',
+				features: '',
+				},
+				{
+				name: 'Roasting Plant',
+				placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
+				description: '',
+				features: '',
+				},
+				{
+				name: 'Rowland Cafe',
+				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
+				description: '',
+				features: ''
+				},
+				{
+				name: 'Dessert Oasis',
+				placeID: 'ChIJzZVcTTAtO4gRe5sIIK-MgJs',
+				description: '',
+				features: ''
+				},
+				{
+				name: 'The Bean Bar',
+				placeID: 'ChIJdyYY-zotO4gRSkl3yFB0L4U',
+				description: '',
+				features: ''
+				}
+			],
+		midtown: [  
 			{
 			name: 'The Bottom Line',
 			placeID: 'ChIJOZ_JV6XSJIgRuE7W1bI52bY',
@@ -70,8 +71,9 @@ app.factory('coffeeService', function($http){
 			placeID: 'ChIJKZ7aELnSJIgRxwOrLDpqooQ',
 			description: '',
 			features: ''
-			}],
-		[ //New Center(2)
+			}
+		],
+		newCenter:[ 
 			{
 			name: 'Cafe Con Leche Nord',
 			placeID: 'ChIJKZ7aELnSJIgRxwOrLDpqooQ',
@@ -83,9 +85,10 @@ app.factory('coffeeService', function($http){
 			placeID: 'ChIJKZ7aELnSJIgRxwOrLDpqooQ',
 			description: '',
 			features: ''
-			}],
-		[ //Corktown(3) 
-		{
+			}
+		],
+		corktown:[ 
+			{
 			name: 'Astro Coffee',
 			placeID: 'ChIJQZSTxVktO4gR_qjDkKNYauk',
 			description: '',
@@ -96,22 +99,25 @@ app.factory('coffeeService', function($http){
 			placeID: 'ChIJp-Jg8VwtO4gRJKYZBSShFTg',
 			description: '',
 			features: ''
-			}],
-		[ //West Village (4)
+			}
+		],
+		westVillage: [
 			{
 			name: 'The Red Hook',
 			placeID: 'ChIJY2gfQ17TJIgRCC-Ib8eakH8',
 			description: '',
 			features: ''
-			}],
-		[ //Jefferson/Chalmers(5)
+			}
+		],
+		jefferson: [
 			{
 			name: 'Coffee and (___)',
 			placeID: 'ChIJ6eXdWAfVJIgRw_BSGXWh7gs',
 			description: '',
 			features: ''
-			}],
-		[ //Eastern Market(6)
+			}
+		],
+		easternMarket: [
 			{
 			name: 'Trinosophes',
 			placeID: 'ChIJw-es3tXSJIgRnzz7A_tsOOQ',
@@ -123,16 +129,17 @@ app.factory('coffeeService', function($http){
 			placeID: 'ChIJZS3wv9bSJIgRMcmDKePqdLQ',
 			description: '',
 			features: ''
-			}],
-		[ //Rosedale Park(7)
+			}
+		],
+		rosedalePark: [
 			{
 			name: 'Always Brewing Detroit',
 			placeID: 'ChIJ5aZkHGrKJIgR7-jlmpGsSH4',
 			description: '',
 			features: ''
 			}
-		]
-		[ //Hamtramck(8)
+		],
+		hamtramck: [
 			{
 			name: 'Cafe 1923',
 			placeID: 'ChIJHS1-WWjSJIgR9OXqeGytqE0',
@@ -140,7 +147,7 @@ app.factory('coffeeService', function($http){
 			features: ''
 			}
 		]
-	];
+	};
 
 	var selectedShop;
 
@@ -152,7 +159,9 @@ app.factory('coffeeService', function($http){
 	return {
 		getLink: getLink,
 		getShop: function(region,shop){
-			selectedShop = places[region][shop];
+			console.log(region[shop]);
+			selectedShop = region[shop];
+
 		},
 		places: places
 	}
