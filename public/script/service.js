@@ -1,8 +1,12 @@
 var app = angular.module('app');
 
 app.factory('coffeeService', function($http){
-	var places = [
-	'ChIJtzwfLTItO4gRxwpKgcgFomE', //ASHE
+	var places = [{
+		placeID:'ChIJtzwfLTItO4gRxwpKgcgFomE',
+		description: 'blah',
+		music: true,
+		work: true,
+	}, //ASHE
 	'ChIJt7odBjEtO4gRgRETxl3QoLE', //Urban Bean
 	'ChIJUwca7i8tO4gRC6azALL0VXY', //Roasting Plant
 	'ChIJs1AnRCUtO4gRIazc_Vjj-ss', //Rowland Cafe
@@ -29,13 +33,14 @@ app.factory('coffeeService', function($http){
 
 	function getLink() {
 		return $http.get(
-"https://maps.googleapis.com/maps/api/place/details/json?placeid=" + places[selectedShop] + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")}
+"https://maps.googleapis.com/maps/api/place/details/json?placeid=" + places[selectedShop].placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")}
 
 
 	return {
 		getLink: getLink,
 		getShop: function(shop){
 			selectedShop = shop;
-		}
+		},
+		places: places
 	}
 });

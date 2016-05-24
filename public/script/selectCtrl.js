@@ -1,7 +1,6 @@
 var app = angular.module('app');
 
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
-	console.log('Hi from selectCtrl');
 	$scope.chooseShop = function (num){
 		coffeeService.getShop(num);
 		$location.path('/coffeeshop')
@@ -16,4 +15,10 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.hamtramckList = false;
 	$scope.easternMarketList = false;
 	$scope.rosedaleParkList = false;
+
+	// $scope.music = false;
+	// $scope.work = false;
+	// $scope.social = false;
+	// $scope.art = false;
+	// $scope.food = false;
 });
