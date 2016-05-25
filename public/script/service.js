@@ -51,7 +51,8 @@ app.factory('coffeeService', function($http){
 			name: 'The Bottom Line',
 			placeID: 'ChIJOZ_JV6XSJIgRuE7W1bI52bY',
 			description: '',
-			features: ''
+			features: '',
+			music: true
 			},
 			{
 			name: 'Fourteen East',
