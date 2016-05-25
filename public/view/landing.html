@@ -1,10 +1,10 @@
 <h2>What are you interested in doing?</h2>
 <ul>
-	<li ng-click="musicChoice(places)">Music/Open Mic</li>
-	<li ng-click="workChoice(places)">Work/study</li>
-	<li ng-click="foodChoice(places)">Food/Desserts</li>
-	<li ng-click="socialChoice(places)">Social</li>
-	<li ng-click="artChoice(places)">Art</li>
+	<li ng-click="chooseInterest('music')">Music/Open Mic</li>
+	<li ng-click="chooseInterest('work')">Work/study</li>
+	<li ng-click="chooseInterest('food')">Food/Desserts</li>
+	<li ng-click="chooseInterest('social')">Social</li>
+	<li ng-click="chooseInterest('art')">Art</li>
 </ul>
 
 <h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
@@ -12,6 +12,7 @@
 	<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 </ul>
 
+<h3 ng-click="midtownList = !midtownList" id="midtown">Midtown</h3>
 <ul ng-show="midtownList">
 	<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
 </ul>
