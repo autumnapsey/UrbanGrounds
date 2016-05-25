@@ -7,14 +7,16 @@ app.factory('coffeeService', function($http){
 				{
 				name: 'ASHE Supply Co.',
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
-				description: '',
+				description: 'blah',
 				features: '',
+				music: true
 				},
 				{
 				name: 'Urban Bean Co.',
 				placeID: 'ChIJt7odBjEtO4gRgRETxl3QoLE',
 				description: '',
 				features: '',
+				music: true
 				},
 				{
 				name: 'Roasting Plant',
@@ -152,17 +154,28 @@ app.factory('coffeeService', function($http){
 	var selectedShop;
 
 	function getLink() {
-		return $http.get(
-"https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")}
-
+		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
+	}
+	var arrMusic;
+	var neighborhood;
 
 	return {
+		arrMusic: arrMusic,
 		getLink: getLink,
 		getShop: function(region,shop){
 			console.log(region[shop]);
 			selectedShop = region[shop];
 
 		},
-		places: places
+		places: places,
+		musicCategory: function(arrayOfObj){
+			for (neighborhood in arrayOfObj){
+				arrayOfObj[neighborhood] = neighborhood.filter(function(el){
+					return el.music === true;
+				})
+			};
+			console.log(arrMusic);
+			return arrMusic
+		}
 	}
 });
