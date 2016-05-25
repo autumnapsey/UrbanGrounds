@@ -19,13 +19,19 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.easternMarketList = false;
 	$scope.rosedaleParkList = false;
 
-	// $scope.music = false;
-	// $scope.work = false;
-	// $scope.social = false;
-	// $scope.art = false;
-	// $scope.food = false;
-
-	$scope.categoryChoice = function(topic){
-
+	$scope.musicChoice = function(array){
+		$scope.places.downtown = coffeeService.musicCategory(array);
+		console.log($scope.places.downtown);
 	}
+
+	$scope.workChoice = function(array){
+		$scope.places.downtown = coffeeService.workCategory(array);
+		console.log($scope.places.downtown);
+	}
+
+	$scope.workChoice = function(array){
+		$scope.places.downtown = coffeeService.workCategory(array);
+		console.log($scope.places.downtown);
+	}
+
 });
