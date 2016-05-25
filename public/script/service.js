@@ -23,12 +23,15 @@ app.factory('coffeeService', function($http){
 				placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
 				description: '',
 				features: '',
+				music: true,
+				work: true
 				},
 				{
 				name: 'Rowland Cafe',
 				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
 				description: '',
-				features: ''
+				features: '',
+				work: true
 				},
 				{
 				name: 'Dessert Oasis',
@@ -152,15 +155,14 @@ app.factory('coffeeService', function($http){
 	};
 
 	var selectedShop;
+	var musicArray = [];
+	var workArray = [];
 
 	function getLink() {
 		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
 	}
-	var arrMusic;
-	var neighborhood;
 
 	return {
-		arrMusic: arrMusic,
 		getLink: getLink,
 		getShop: function(region,shop){
 			console.log(region[shop]);
@@ -168,14 +170,31 @@ app.factory('coffeeService', function($http){
 
 		},
 		places: places,
-		musicCategory: function(arrayOfObj){
-			for (neighborhood in arrayOfObj){
-				arrayOfObj[neighborhood] = neighborhood.filter(function(el){
+		musicCategory: function(objOfArrays){
+			for (neighborhood in objOfArrays){
+				if(objOfArrays.hasOwnProperty(neighborhood)){
+					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
+						musicArray.push(objOfArrays[neighborhood][i]);
+					}
+				}
+			}
+			var newMusicArray = musicArray.filter(function(el){
 					return el.music === true;
-				})
-			};
-			console.log(arrMusic);
-			return arrMusic
+			});
+			return newMusicArray;
+		},
+		workCategory: function(objOfArrays){
+			for (neighborhood in objOfArrays){
+				if(objOfArrays.hasOwnProperty(neighborhood)){
+					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
+						workArray.push(objOfArrays[neighborhood][i]);
+					}
+				}
+			}
+			var newWorkArray = workArray.filter(function(el){
+					return el.work === true;
+			});
+			return newWorkArray;
 		}
 	}
 });
