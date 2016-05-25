@@ -9,7 +9,7 @@ app.factory('coffeeService', function($http){
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
 				description: 'blah',
 				features: '',
-				music: true,
+				music: false,
 				food: true
 				},
 				{
@@ -18,7 +18,7 @@ app.factory('coffeeService', function($http){
 				description: '',
 				features: '',
 				music: true,
-				food: true,
+				food: false,
 				social: true
 				},
 				{
@@ -60,13 +60,15 @@ app.factory('coffeeService', function($http){
 			description: '',
 			features: '',
 			food: true,
-			music: true
+			music: false
 			},
 			{
 			name: 'Fourteen East',
 			placeID: 'ChIJ8Vn3cL3SJIgRAN16yJ9YXVc',
 			description: '',
-			features: ''
+			features: '',
+			food: true,
+			art: true
 			},
 			{
 			name: 'Great Lakes Coffee',
@@ -164,11 +166,9 @@ app.factory('coffeeService', function($http){
 	};
 
 	var selectedShop;
-	var musicArray = [];
-	var workArray = [];
-	var foodArray = [];
-	var socialArray = [];
-	var artArray = [];
+
+
+	var filteredPlaces = {};
 
 
 	function getLink() {
@@ -183,74 +183,17 @@ app.factory('coffeeService', function($http){
 
 		},
 		places: places,
-		musicCategory: function(objOfArrays){
-			for (neighborhood in objOfArrays){
-				if(objOfArrays.hasOwnProperty(neighborhood)){
-					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
-						musicArray.push(objOfArrays[neighborhood][i]);
-					}
+		selectCategory: function(interest){
+			for (neighborhood in places){
+				if(places.hasOwnProperty(neighborhood)){
+					filteredPlaces[neighborhood]= places[neighborhood].filter(function(el){
+						return el[interest] === true;
+					});
 				}
 			}
-			var newMusicArray = musicArray.filter(function(el){
-					return el.music === true;
-			});
-			return newMusicArray;
+			console.log(filteredPlaces);
+		
+			return filteredPlaces;
 		},
-		workCategory: function(objOfArrays){
-			for (neighborhood in objOfArrays){
-				if(objOfArrays.hasOwnProperty(neighborhood)){
-					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
-						workArray.push(objOfArrays[neighborhood][i]);
-					}
-				}
-			}
-			var newWorkArray = workArray.filter(function(el){
-					return el.work === true;
-			});
-			return newWorkArray;
-		},
-
-		foodCategory: function(objOfArrays){
-			for (neighborhood in objOfArrays){
-				if(objOfArrays.hasOwnProperty(neighborhood)){
-					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
-						foodArray.push(objOfArrays[neighborhood][i]);
-					}
-				}
-			}
-			var newFoodArray = foodArray.filter(function(el){
-					return el.food === true;
-			});
-			return newFoodArray;
-		},
-
-		socialCategory: function(objOfArrays){
-			for (neighborhood in objOfArrays){
-				if(objOfArrays.hasOwnProperty(neighborhood)){
-					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
-						socialArray.push(objOfArrays[neighborhood][i]);
-					}
-				}
-			}
-			var newSocialArray = socialArray.filter(function(el){
-					return el.social === true;
-			});
-			return newSocialArray;
-		},
-
-		artCategory: function(objOfArrays){
-			for (neighborhood in objOfArrays){
-				if(objOfArrays.hasOwnProperty(neighborhood)){
-					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
-						artArray.push(objOfArrays[neighborhood][i]);
-					}
-				}
-			}
-			var newArtArray = artArray.filter(function(el){
-					return el.art === true;
-			});
-			return newArtArray;
-		}
-
 	}
 });
