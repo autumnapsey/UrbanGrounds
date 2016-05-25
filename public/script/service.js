@@ -9,14 +9,17 @@ app.factory('coffeeService', function($http){
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
 				description: 'blah',
 				features: '',
-				music: true
+				music: true,
+				food: true
 				},
 				{
 				name: 'Urban Bean Co.',
 				placeID: 'ChIJt7odBjEtO4gRgRETxl3QoLE',
 				description: '',
 				features: '',
-				music: true
+				music: true,
+				food: true,
+				social: true
 				},
 				{
 				name: 'Roasting Plant',
@@ -24,14 +27,16 @@ app.factory('coffeeService', function($http){
 				description: '',
 				features: '',
 				music: true,
-				work: true
+				work: true,
+				art: true
 				},
 				{
 				name: 'Rowland Cafe',
 				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
 				description: '',
 				features: '',
-				work: true
+				work: true,
+				food: true
 				},
 				{
 				name: 'Dessert Oasis',
@@ -51,7 +56,9 @@ app.factory('coffeeService', function($http){
 			name: 'The Bottom Line',
 			placeID: 'ChIJOZ_JV6XSJIgRuE7W1bI52bY',
 			description: '',
-			features: ''
+			features: '',
+			food: true,
+			music: true
 			},
 			{
 			name: 'Fourteen East',
@@ -157,6 +164,10 @@ app.factory('coffeeService', function($http){
 	var selectedShop;
 	var musicArray = [];
 	var workArray = [];
+	var foodArray = [];
+	var socialArray = [];
+	var artArray = [];
+
 
 	function getLink() {
 		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
@@ -195,6 +206,49 @@ app.factory('coffeeService', function($http){
 					return el.work === true;
 			});
 			return newWorkArray;
+		},
+
+		foodCategory: function(objOfArrays){
+			for (neighborhood in objOfArrays){
+				if(objOfArrays.hasOwnProperty(neighborhood)){
+					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
+						foodArray.push(objOfArrays[neighborhood][i]);
+					}
+				}
+			}
+			var newFoodArray = foodArray.filter(function(el){
+					return el.food === true;
+			});
+			return newFoodArray;
+		},
+
+		socialCategory: function(objOfArrays){
+			for (neighborhood in objOfArrays){
+				if(objOfArrays.hasOwnProperty(neighborhood)){
+					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
+						socialArray.push(objOfArrays[neighborhood][i]);
+					}
+				}
+			}
+			var newSocialArray = socialArray.filter(function(el){
+					return el.social === true;
+			});
+			return newSocialArray;
+		},
+
+		artCategory: function(objOfArrays){
+			for (neighborhood in objOfArrays){
+				if(objOfArrays.hasOwnProperty(neighborhood)){
+					for (var i= 0, j=objOfArrays[neighborhood].length; i<j; i++){
+						artArray.push(objOfArrays[neighborhood][i]);
+					}
+				}
+			}
+			var newArtArray = artArray.filter(function(el){
+					return el.art === true;
+			});
+			return newArtArray;
 		}
+
 	}
 });
