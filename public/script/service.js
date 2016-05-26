@@ -64,7 +64,7 @@ app.factory('coffeeService', function($http){
 				features: '',
 				social: true,
 				music: true,
-				wrk: true,
+				work: true,
 				art: true
 			},
 			{
