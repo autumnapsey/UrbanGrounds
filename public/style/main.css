@@ -32,6 +32,8 @@ body {
 }
 .corktownMap {
   position: absolute;
+  top: 58%;
+  left: 42%;
 }
 .westVillageMap {
   position: absolute;
