@@ -42,7 +42,7 @@ app.factory('coffeeService', function($http){
 				name: 'Rowland Cafe',
 				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
 				description: 'Go to see the inside of the fabulous mosaic lobby of the Guardian Building, stay for the tasty coffee at the Rowland Cafe. Located in one of the most stunning buildings in Detroit, it’s a great place to visit and have a light lunch.',
-				features:
+				features: '',
 				work: false,
 				social: false,
 				food: true,
@@ -70,7 +70,7 @@ app.factory('coffeeService', function($http){
 				food: true,
 				music: false,
 				all: true
-			}
+			},
 			{
 				name: 'Detroit Athletic Club Cafe',
 				placeID: 'ChIJddBmfDItO4gRRlJjD-hy6cc',
@@ -141,9 +141,9 @@ app.factory('coffeeService', function($http){
 				food: true,
 				music: false,
 				all: true
-			}
+			},
 			{
-				name: 'Kresge Court'
+				name: 'Kresge Court',
 				placeID: '',
 				features: '',
 				work: true,
@@ -182,7 +182,7 @@ app.factory('coffeeService', function($http){
 				name: 'Astro Coffee',
 				placeID: 'ChIJQZSTxVktO4gR_qjDkKNYauk',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: true,
@@ -194,7 +194,7 @@ app.factory('coffeeService', function($http){
 				name: 'Anthology Coffee',
 				placeID: 'ChIJp-Jg8VwtO4gRJKYZBSShFTg',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: false,
@@ -208,29 +208,29 @@ app.factory('coffeeService', function($http){
 				name: 'The Red Hook',
 				placeID: 'ChIJY2gfQ17TJIgRCC-Ib8eakH8',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: true,
 				music: false,
 				all: true
-
-				{
-					name: 'Sister Pie',
-					placeID: 'ChIJucNILWfTJIgRUonGOtN2O7Y',
-					description: '',
-					work: false,
-					social: true,
-					food: true,
-					music: false,
-					all: true
-				}
+			},
+			{
+				name: 'Sister Pie',
+				placeID: 'ChIJucNILWfTJIgRUonGOtN2O7Y',
+				description: '',
+				work: false,
+				social: true,
+				food: true,
+				music: false,
+				all: true
+			},
 
 			{
 				name: 'Coffee and (___)',
 				placeID: 'ChIJ6eXdWAfVJIgRw_BSGXWh7gs',
 				description: '',
-				features: ''
+				features: '',
 				work: false,
 				social: true,
 				food: true,
@@ -244,7 +244,7 @@ app.factory('coffeeService', function($http){
 				name: 'Trinosophes',
 				placeID: 'ChIJw-es3tXSJIgRnzz7A_tsOOQ',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: true,
@@ -252,7 +252,7 @@ app.factory('coffeeService', function($http){
 				all: true
 			},
 			{
-				name: 'Cairo Coffee'
+				name: 'Cairo Coffee',
 				placeID: 'ChIJQYrmDdfSJIgRmCFB7UeQu4Q',
 				description: '',
 				features: '',
@@ -261,12 +261,12 @@ app.factory('coffeeService', function($http){
 				food: true,
 				music: false,
 				all: true
-			}
+			},
 			{
 				name: 'Germack Coffee Roasting Co.',
 				placeID: 'ChIJZS3wv9bSJIgRMcmDKePqdLQ',
 				description: '',
-				features: ''
+				features: '',
 				work: false,
 				social: true,
 				food: false,
@@ -279,27 +279,26 @@ app.factory('coffeeService', function($http){
 				name: 'Always Brewing Detroit',
 				placeID: 'ChIJ5aZkHGrKJIgR7-jlmpGsSH4',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: true,
 				music: false,
 				all: true
 			}
-
 		],
 		hamtramck: [
 			{
 				name: 'Cafe 1923',
 				placeID: 'ChIJHS1-WWjSJIgR9OXqeGytqE0',
 				description: '',
-				features: ''
+				features: '',
 				work: true,
 				social: true,
 				food: true,
 				music: false,
 				all: true
-			}
+			},
 			{
 				name: 'Caniff Deli Coffee LLC',
 				placeID: 'ChIJbSgRrm3SJIgRGGuc10CluBQ',
@@ -321,27 +320,28 @@ app.factory('coffeeService', function($http){
 	function getLink() {
 		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
 	}
+	function getDescription(){
+		return selectedShop.description;
+	}
+	function getShop(region,shop){
+				selectedShop = region[shop];
+	}
+	function selectCategory(interest){
+		for (neighborhood in places){
+			if(places.hasOwnProperty(neighborhood)){
+				filteredPlaces[neighborhood] = places[neighborhood].filter(function(el){
+					return el[interest] === true;
+				});
+			}
+		}
+		return filteredPlaces;
+	}
 
 	return {
-		getDescription: function(){
-			console.log("get description" + selectedShop.description);
-			return selectedShop.description;
-		},
+		getDescription: getDescription,
 		getLink: getLink,
-		getShop: function(region,shop){
-			selectedShop = region[shop];
-
-		},
+		getShop: getShop,
 		places: places,
-		selectCategory: function(interest){
-			for (neighborhood in places){
-				if(places.hasOwnProperty(neighborhood)){
-					filteredPlaces[neighborhood]= places[neighborhood].filter(function(el){
-						return el[interest] === true;
-					});
-				}
-			}
-			return filteredPlaces;
-		},
+		selectCategory: selectCategory,
 	}
 });
