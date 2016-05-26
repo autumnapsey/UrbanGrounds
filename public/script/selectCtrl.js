@@ -13,7 +13,6 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.newcenterList = false;
 	$scope.corktownList = false;
 	$scope.westVillageList = false;
-	$scope.jeffersonList = false;
 	$scope.hamtramckList = false;
 	$scope.easternMarketList = false;
 	$scope.rosedaleParkList = false;
