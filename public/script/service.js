@@ -7,7 +7,7 @@ app.factory('coffeeService', function($http){
 				{
 				name: 'ASHE Supply Co.',
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
-				description: 'blah',
+				description: 'Detroit’s new kid on the coffee block, ASHE Supply Co. feels like it’s already well established in the neighborhood. Servicing the many startups that share the Madison Building, the coffee shop has blazing fast Rocket Fiber wifi. It serves up Detroit food favorites like Detroit Institute of Bagels and Sister Pie.',
 				features: '',
 				music: false,
 				food: true
@@ -15,7 +15,7 @@ app.factory('coffeeService', function($http){
 				{
 				name: 'Urban Bean Co.',
 				placeID: 'ChIJt7odBjEtO4gRgRETxl3QoLE',
-				description: '',
+				description: 'The Urban Bean is a hip haven featuring mid-century modern style and DJs spinning techno and house. It’s got a second level providing ample space for you and your friends.',
 				features: '',
 				music: true,
 				food: false,
@@ -24,7 +24,7 @@ app.factory('coffeeService', function($http){
 				{
 				name: 'Roasting Plant',
 				placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
-				description: '',
+				description: 'The future is now when it comes to coffee at the Roasting Plant. Boasting a Jetsons worthy Javabot that brews your coffee, the Roasting Plant offers novelty and a good cup of coffee.',
 				features: '',
 				music: true,
 				work: true,
@@ -34,21 +34,21 @@ app.factory('coffeeService', function($http){
 				name: 'Rowland Cafe',
 				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
 				description: '',
-				features: '',
+				features: 'Go to see the inside of the fabulous mosaic lobby of the Guardian Building, stay for the tasty coffee at the Rowland Cafe. Located in one of the most stunning buildings in Detroit, it’s a great place to visit and have a light lunch.',
 				work: true,
 				food: true
 				},
 				{
 				name: 'Dessert Oasis',
 				placeID: 'ChIJzZVcTTAtO4gRe5sIIK-MgJs',
-				description: '',
+				description: 'As the name implies, Dessert Oasis’ sweet treats are a welcome bonus to this Capital Park coffee shop. With ample seating options, and industrial atmosphere, it’s a great place to get to work.',
 				features: '',
 				social: true
 				},
 				{
 				name: 'The Bean Bar',
 				placeID: 'ChIJdyYY-zotO4gRSkl3yFB0L4U',
-				description: '',
+				description: 'The Bean Bar serves coffee, smoothies and light fare to workers in the Cobo area. You can’t miss it with it’s space-age sign. The hours are strictly breakfast and lunch, so don’t go looking for an evening pick-me-up.',
 				features: '',
 				art: true
 				}

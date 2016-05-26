@@ -20,7 +20,7 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 
 	$scope.chooseInterest = function(interest){
 		$scope.places = coffeeService.selectCategory(interest);
-		console.log($scope.places.downtown);
+		//console.log($scope.places.downtown);
 	}
 
 });
