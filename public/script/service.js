@@ -167,18 +167,19 @@ app.factory('coffeeService', function($http){
 
 	var selectedShop;
 
-
 	var filteredPlaces = {};
-
 
 	function getLink() {
 		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
 	}
 
 	return {
+		getDescription: function(){
+			console.log("get description" + selectedShop.description);
+			return selectedShop.description;
+		},
 		getLink: getLink,
 		getShop: function(region,shop){
-			console.log(region[shop]);
 			selectedShop = region[shop];
 
 		},
@@ -190,9 +191,7 @@ app.factory('coffeeService', function($http){
 						return el[interest] === true;
 					});
 				}
-			}
-			console.log(filteredPlaces);
-		
+			}		
 			return filteredPlaces;
 		},
 	}
