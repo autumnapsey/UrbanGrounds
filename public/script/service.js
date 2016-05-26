@@ -42,7 +42,7 @@ app.factory('coffeeService', function($http){
 				name: 'Rowland Cafe',
 				placeID: 'ChIJs1AnRCUtO4gRIazc_Vjj-ss',
 				description: 'Go to see the inside of the fabulous mosaic lobby of the Guardian Building, stay for the tasty coffee at the Rowland Cafe. Located in one of the most stunning buildings in Detroit, it’s a great place to visit and have a light lunch.',
-				features:
+				features: '',
 				work: false,
 				social: false,
 				food: true,
