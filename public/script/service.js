@@ -198,27 +198,28 @@ app.factory('coffeeService', function($http){
 	function getLink() {
 		return $http.get("https://maps.googleapis.com/maps/api/place/details/json?placeid=" + selectedShop.placeID + "&key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o")
 	}
+	function getDescription(){
+		return selectedShop.description;
+	}
+	function getShop(region,shop){
+				selectedShop = region[shop];
+	}
+	function selectCategory(interest){
+		for (neighborhood in places){
+			if(places.hasOwnProperty(neighborhood)){
+				filteredPlaces[neighborhood] = places[neighborhood].filter(function(el){
+					return el[interest] === true;
+				});
+			}
+		}		
+		return filteredPlaces;
+	}
 
 	return {
-		getDescription: function(){
-			console.log("get description" + selectedShop.description);
-			return selectedShop.description;
-		},
+		getDescription: getDescription,
 		getLink: getLink,
-		getShop: function(region,shop){
-			selectedShop = region[shop];
-
-		},
+		getShop: getShop,
 		places: places,
-		selectCategory: function(interest){
-			for (neighborhood in places){
-				if(places.hasOwnProperty(neighborhood)){
-					filteredPlaces[neighborhood]= places[neighborhood].filter(function(el){
-						return el[interest] === true;
-					});
-				}
-			}		
-			return filteredPlaces;
-		},
+		selectCategory: selectCategory,
 	}
 });
