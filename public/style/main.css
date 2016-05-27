@@ -1,7 +1,32 @@
 body {
-  background-image: url("images/honey_im_subtle.png");
+  background-image: url("../images/honey_im_subtle.png");
   font-family: arial;
 }
 .boldText {
   font-weight: bold;
+}
+.landing {
+  background-color: #f00;
+  background-image: url("../images/DetroitMap.png");
+  height: 632px;
+  width: 916px;
+}
+#downtown,
+#midtown,
+#newCenter,
+#corktown,
+#westVillage,
+#hamtramck,
+#easternMarket,
+#rosedale {
+  position: relative;
+  color: #fff;
+}
+#logo {
+  width: 60%;
+}
+header {
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
 }
