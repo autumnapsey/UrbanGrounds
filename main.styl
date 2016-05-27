@@ -16,12 +16,15 @@ header
 #logo
 	width 60%
 
+.categoryBar li
+	display inline-block
+
 //Text Styling
 
 .boldText
 	font-weight: bold
 
-//Flexbox Styling
+//Map Styling
 
 .neighbourhoodContainer
 	color white
@@ -89,6 +92,11 @@ header
 	top 30%
 	left 55%
 
+.hoursBox
+	float right
+	margin-right 5%
+
+
 @media (max-width: 875px) {
 	.neighbourhoodContainer	{
 		max-width: 100%;
@@ -101,3 +109,15 @@ header
 		position: static;
 	}
 }
+
+
+
+//Interest Icon Styling
+
+.iconContainer
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
+	justify-content space-around
+	-webkit-justify-content space-around

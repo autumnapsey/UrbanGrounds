@@ -15,6 +15,9 @@ header {
 #logo {
   width: 60%;
 }
+.categoryBar li {
+  display: inline-block;
+}
 .boldText {
   font-weight: bold;
 }
@@ -83,6 +86,10 @@ header {
   top: 30%;
   left: 55%;
 }
+.hoursBox {
+  float: right;
+  margin-right: 5%;
+}
 @media (max-width: 875px) {
   .neighbourhoodContainer {
     max-width: 100%;
@@ -100,4 +107,12 @@ header {
   .hamtramckMap {
     position: static;
   }
+}
+.iconContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
 }

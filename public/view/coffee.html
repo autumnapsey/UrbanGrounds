@@ -1,8 +1,6 @@
 <div>
-	<h2 class="shopName">{{coffeeShop.name}}</h2>
-	<p class="address"><span class="boldText">Address: </span>{{coffeeShop.formatted_address}}</p>
-	<p class="phone"><span class="boldText">Phone: </span>{{coffeeShop.formatted_phone_number}}</p>
-	<p class="openNow"><span class="boldText">{{openNow()}}</span></p>
+	<h2 class="shopName"><a href="{{coffeeShop.website}}">{{coffeeShop.name}}</a></h2>
+
 	<div class="hoursBox">
 		<p><span class="boldText">Weekly Hours:</span></p>
 		<p>
@@ -15,7 +13,10 @@
 		{{coffeeShop.opening_hours.weekday_text[6]}}<br />
 		</p>
 	</div>
-	<p class=""><span class="boldText">Rating: </span> {{coffeeShop.rating}}/5</p>
-	<p><span class="boldText">Website: </span> <a href="{{coffeeShop.website}}">{{coffeeShop.website}}</a></p>
-	<p>{{getDescription()}}</p>
+	<p class="address"><span class="boldText">Address: </span>{{coffeeShop.formatted_address}}</p>
+	<p class="phone"><span class="boldText">Phone: </span>{{coffeeShop.formatted_phone_number}}</p>
+	<p class="openNow"><span class="boldText">{{openNow()}}</span></p>
+
+	<p class="rating"><span class="boldText">Rating: </span> {{coffeeShop.rating}}/5</p>
+	<p class="description">{{getDescription()}}</p>
 </div>
