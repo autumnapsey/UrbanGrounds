@@ -23,6 +23,6 @@ gulp.task('browser-sync', function() {
             baseDir: "./public"
         }
     });
-	gulp.watch(["public/*.html", "*.js", "*.styl"], ["jshint", 'style'])
+	gulp.watch(["/*/*/*.html", "/*/*.js", "*.styl"], ["jshint", 'style', "browser-sync"])
 	.on("change", browserSync.reload);
 });

@@ -11,6 +11,9 @@ header {
 #logo {
   width: 60%;
 }
+.categoryBar li {
+  display: inline-block;
+}
 .boldText {
   font-weight: bold;
 }
@@ -68,6 +71,10 @@ header {
   position: absolute;
   top: 30%;
   left: 55%;
+}
+.hoursBox {
+  float: right;
+  margin-right: 5%;
 }
 @media (max-width: 875px) {
   .neighbourhoodContainer {
