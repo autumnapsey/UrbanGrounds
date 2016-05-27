@@ -8,11 +8,9 @@
 	<li ng-click="chooseInterest('all')">I don't care, just give me coffee.</li>
 </ul>
 
-
-
 <div class="neighbourhoodContainer">
 
-	<img src="../images/DetroitMap.png" class="map">
+	<img src="../images/DetroitMap.png" class="map" alt="Map of Detroit" />
 
 	<div class="downtownMap">
 		<h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
@@ -60,7 +58,7 @@
 			</ul>
 	</div>
 
-	<div class="eastermMarketMap">
+	<div class="easternMarketMap">
 		<h3 ng-click="easternMarketList = !easternMarketList" id="easternMarket">Eastern Market</h3>
 			<ul ng-show="easternMarketList">
 				<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>

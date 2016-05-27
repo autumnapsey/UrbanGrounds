@@ -2,9 +2,20 @@ body {
   background-image: url("../images/honey_im_subtle.png");
   font-family: arial;
 }
+
 ul {
   list-style: none;
   text-align: left;
+
+header {
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#logo {
+  width: 60%;
+
 }
 .boldText {
   font-weight: bold;
@@ -21,7 +32,7 @@ ul {
 }
 .map {
   height: auto;
-  width: 100%;
+  width: 80%;
   justify-content: center;
 }
 .downtownMap {
@@ -58,7 +69,7 @@ ul {
   top: 40%;
   left: 42%;
 }
-.eastermMarketMap {
+.easternMarketMap {
   position: absolute;
   top: 49%;
   left: 60%;
@@ -72,4 +83,22 @@ ul {
   position: absolute;
   top: 30%;
   left: 55%;
+}
+@media (max-width: 875px) {
+  .neighbourhoodContainer {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 690px) {
+  .downtownMap,
+  .midtownMap,
+  .corktownMap,
+  .westVillageMap,
+  .newCenterMap,
+  .easternMarketMap,
+  .rosedaleMap,
+  .hamtramckMap {
+    position: static;
+  }
 }
