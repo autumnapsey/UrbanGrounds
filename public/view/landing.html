@@ -10,7 +10,7 @@
 
 <div class="neighbourhoodContainer">
 
-	<img src="../images/DetroitMap.png" class="map" alt="Map of Detroit" />
+	<!--img src="../images/DetroitMap.png" class="map" alt="Map of Detroit" />
 
 	<div class="downtownMap">
 		<h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
@@ -70,6 +70,18 @@
 			<ul ng-show="rosedaleParkList">
 				<li ng-repeat="store in places.rosedalePark track by $index" ng-click="chooseShop(places.rosedalePark,$index)">{{store.name}}</li>
 			</ul>
-	</div>
+	</div-->
 
 </div>
+
+<img src="../images/DetroitMap.png" alt="Detroit Map" usemap="#Map" />
+<map name="Map" id="Map">
+   <area alt="Downtown" title="Downtown" href="#" shape="poly" coords="498,474,537,437,567,428,595,415,613,408,640,394,656,389,648,371,638,358,621,357,598,357,580,358,562,363,540,368,525,368,511,368,500,368,493,368,476,377,474,392,476,409,480,426" />
+   <area alt="Corktown" title="Corktown" href="#" shape="poly" coords="344,338,341,356,333,367,322,369,323,395,325,403,332,399,334,410,343,423,349,431,359,447,364,459,398,455,440,447,464,434,475,421,471,392,473,379,484,369,482,355,459,345,433,337,394,337" />
+   <area alt="Midtown" title="Midtown" href="#" shape="poly" coords="432,335,483,353,485,370,499,367,523,364,542,365,570,359,584,357,617,354,629,345,629,327,623,315,611,308,588,301,562,301,534,308,505,315,475,319,444,325" />
+   <area alt="West Village" title="West Village" href="#" shape="poly" coords="626,313,629,325,631,337,631,345,622,354,635,355,643,364,653,379,657,388,690,389,717,388,735,383,765,369,784,364,805,353,825,339,860,330,873,322,867,303,859,293,829,289,786,291,746,295" />
+   <area alt="Eastern Market" title="Eastern Market" href="#" shape="poly" coords="545,301,539,265,556,253,607,244,644,240,691,245,715,246,730,253,744,276,744,287,732,296,647,308,623,313" />
+   <area alt="New Center" title="New Center" href="#" shape="poly" coords="379,266,380,240,429,239,467,246,505,252,523,259,535,264,542,304,427,332,397,334,352,328,340,295,341,262,361,246,372,242" />
+   <area alt="Hamtramck" title="Hamtramck" href="#" shape="poly" coords="556,109,489,112,465,136,463,159,461,188,491,212,508,214,537,226,601,226,672,214,725,201,733,157,705,110,637,93,562,90,528,96" />
+   <area alt="Rosedale" title="Rosedale" href="#" shape="poly" coords="202,25,134,45,98,94,86,165,122,197,188,204,265,204,332,197,389,188,420,172,439,137,443,74,402,48,292,25" />
+</map>
