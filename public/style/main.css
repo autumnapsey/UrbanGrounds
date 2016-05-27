@@ -2,6 +2,10 @@ body {
   background-image: url("../images/honey_im_subtle.png");
   font-family: arial;
 }
+ul {
+  list-style: none;
+  text-align: left;
+}
 header {
   background-color: #fff;
   margin: 0px;
@@ -19,12 +23,13 @@ header {
 }
 .neighbourhoodContainer {
   color: #fff;
+  text-shadow: 10px;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   max-width: 80%;
   width: 100%;
-  background-color: #f00;
   position: absolute;
 }
 .map {
@@ -36,6 +41,15 @@ header {
   position: absolute;
   top: 60%;
   left: 55%;
+}
+.downtownList {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: #daa520;
+  opacity: 0.6;
+  top: 20%;
+  left: 20%;
 }
 .midtownMap {
   position: absolute;
@@ -93,4 +107,12 @@ header {
   .hamtramckMap {
     position: static;
   }
+}
+.iconContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
 }
