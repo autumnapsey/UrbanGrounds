@@ -41,7 +41,6 @@ h2 {
   width: 100%;
 }
 .downtownList {
-  position: absolute;
   background-color: #d9d9d9;
   top: 10%;
   left: 30%;
@@ -51,6 +50,9 @@ h2 {
   width: 34%;
   padding: 3.2%;
   border-radius: 20px;
+  position: absolute;
+  left: 30%;
+  top: 170%;
 }
 @media (max-width: 875px) {
   .neighbourhoodContainer {
