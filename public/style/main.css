@@ -2,6 +2,10 @@ body {
   background-image: url("../images/honey_im_subtle.png");
   font-family: arial;
 }
+ul {
+  list-style: none;
+  text-align: left;
+}
 .boldText {
   font-weight: bold;
 }
@@ -24,6 +28,15 @@ body {
   position: absolute;
   top: 60%;
   left: 55%;
+}
+.downtownList {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: #daa520;
+  opacity: 0.6;
+  top: 20%;
+  left: 20%;
 }
 .midtownMap {
   position: absolute;

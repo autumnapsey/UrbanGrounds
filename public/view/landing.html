@@ -16,7 +16,9 @@
 
 	<div class="downtownMap">
 		<h3 ng-click="downtownList = !downtownList" id="downtown">Downtown</h3>
-			<ul ng-show="downtownList">
+	</div>
+	<div ng-show="downtownList" class="downtownList">
+			<ul >
 				<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 			</ul>
 	</div>
@@ -37,9 +39,11 @@
 
 	<div class="corktownMap">
 		<h3 ng-click="corktownList = !corktownList" id="corktown">Corktown</h3>
+			<div>
 			<ul ng-show="corktownList">
 				<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 			</ul>
+		</div>
 	</div>
 
 	<div class="westVillageMap">
