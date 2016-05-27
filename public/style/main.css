@@ -46,12 +46,14 @@ h2 {
 }
 .downtownList {
   position: absolute;
-  width: 40%;
-  height: 40%;
-  background-color: #daa520;
-  opacity: 0.6;
-  top: 20%;
-  left: 20%;
+  background-color: #d9d9d9;
+  top: 15%;
+  left: 30%;
+  opacity: 0.8;
+  color: #000;
+  height: 24%;
+  width: 34%;
+  padding: 3%;
 }
 @media (max-width: 875px) {
   .neighbourhoodContainer {
