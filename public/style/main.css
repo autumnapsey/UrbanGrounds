@@ -36,13 +36,7 @@ h2 {
 }
 .map {
   height: auto;
-  width: 80%;
-  justify-content: center;
-}
-.downtownMap {
-  position: absolute;
-  top: 60%;
-  left: 55%;
+  width: 100%;
 }
 .downtownList {
   position: absolute;
@@ -52,45 +46,6 @@ h2 {
   opacity: 0.6;
   top: 20%;
   left: 20%;
-}
-.midtownMap {
-  position: absolute;
-  top: 50%;
-  left: 49%;
-}
-.corktownMap {
-  position: absolute;
-  top: 58%;
-  left: 42%;
-}
-.westVillageMap {
-  position: absolute;
-  top: 54%;
-  left: 67%;
-}
-.newCenterMap {
-  position: absolute;
-  top: 40%;
-  left: 42%;
-}
-.easternMarketMap {
-  position: absolute;
-  top: 49%;
-  left: 60%;
-}
-.rosedaleMap {
-  position: absolute;
-  top: 15%;
-  left: 20%;
-}
-.hamtramckMap {
-  position: absolute;
-  top: 30%;
-  left: 55%;
-}
-.hoursBox {
-  float: right;
-  margin-right: 5%;
 }
 @media (max-width: 875px) {
   .neighbourhoodContainer {
