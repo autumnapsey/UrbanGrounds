@@ -36,49 +36,49 @@
 
 
 			<div ng-show="downtownList" class="downtownList">
-					<ul ng-show="downtownList">
+					<ul ng-show="downtownList" id="downtownList">
 						<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="midtownMap">
-					<ul ng-show="midtownList">
+					<ul ng-show="midtownList" id="midtownList">
 						<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="newCenterMap">
-					<ul ng-show="newcenterList">
+					<ul ng-show="newcenterList" id="newCenterList">
 						<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="corktownMap">
-					<ul ng-show="corktownList">
+					<ul ng-show="corktownList" id="corktownList">
 						<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="westVillageMap">
-					<ul ng-show="westVillageList">
+					<ul ng-show="westVillageList" id="westVillageList">
 						<li ng-repeat="store in places.westVillage track by $index" ng-click="chooseShop(places.westVillage,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="hamtramckMap">
-					<ul ng-show="hamtramckList">
+					<ul ng-show="hamtramckList" id="hamtramckList">
 						<li ng-repeat="store in places.hamtramck track by $index" ng-click="chooseShop(places.hamtramck,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="easternMarketMap">
-					<ul ng-show="easternMarketList">
+					<ul ng-show="easternMarketList" id="easternMarketList">
 						<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>
 					</ul>
 			</div>
 
 			<div class="rosedaleMap">
-					<ul ng-show="rosedaleParkList">
+					<ul ng-show="rosedaleParkList" id="rosedaleParkList">
 						<li ng-repeat="store in places.rosedalePark track by $index" ng-click="chooseShop(places.rosedalePark,$index)">{{store.name}}</li>
 					</ul>
 			</div>

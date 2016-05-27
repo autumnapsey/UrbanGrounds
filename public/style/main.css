@@ -1,13 +1,15 @@
 body {
   background-image: url("../images/honey_im_subtle.png");
-  font-family: arial;
+}
+.rioGlamour {
+  font-family: rioGlamour;
+  letter-spacing: 0.25em;
 }
 ul {
   list-style: none;
   text-align: left;
 }
 header {
-  background-color: #800080;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -21,6 +23,10 @@ h2 {
 }
 .boldText {
   font-weight: bold;
+}
+@fontface {
+  font-family: rioGlamour;
+  src: url("../fonts/RioGlamour2.otf");
 }
 .neighbourhoodContainer {
   flex: 1;
