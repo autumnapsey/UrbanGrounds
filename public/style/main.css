@@ -1,7 +1,116 @@
 body {
-  background-image: url("images/honey_im_subtle.png");
+  background-image: url("../images/honey_im_subtle.png");
   font-family: arial;
+}
+ul {
+  list-style: none;
+  text-align: left;
+}
+header {
+  background-color: #800080;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#logo {
+  width: 60%;
+}
+h2 {
+  margin-left: 4%;
+  margin-top: 2%;
 }
 .boldText {
   font-weight: bold;
+}
+@fontface {
+  font-family: rioGlamour;
+  src: url("../fonts/RioGlamour2.otf");
+}
+.neighbourhoodContainer {
+  flex: 1;
+  color: #fff;
+  text-shadow: 10px;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+  position: absolute;
+}
+.map {
+  height: auto;
+  width: 100%;
+}
+.downtownList {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: #daa520;
+  opacity: 0.6;
+  top: 20%;
+  left: 20%;
+}
+@media (max-width: 875px) {
+  .neighbourhoodContainer {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 690px) {
+  .downtownMap,
+  .midtownMap,
+  .corktownMap,
+  .westVillageMap,
+  .newCenterMap,
+  .easternMarketMap,
+  .rosedaleMap,
+  .hamtramckMap {
+    position: static;
+  }
+}
+.iconContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 8%;
+  margin-bottom: 13%;
+}
+.site {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  min-height: 100vh;
+}
+.footerContainer {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  height: 100%;
+}
+.shopSite {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.container1 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container2 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }

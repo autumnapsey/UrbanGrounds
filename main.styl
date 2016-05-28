@@ -1,8 +1,164 @@
-body {
-	background-image url("images/honey_im_subtle.png")
+body
+	background-image url("../images/honey_im_subtle.png")
 	font-family arial
+
+
+ul
+	list-style none
+	text-align left
+
+header
+	background-color purple
+	margin 0px
+	padding 0px
+	text-align center
+
+#logo
+	width 60%
+
+h2
+	margin-left 4%
+	margin-top 2%
+
+//Text Styling
+
+.boldText
+	font-weight: bold
+
+@fontface
+	font-family rioGlamour
+	src url(../fonts/RioGlamour2.otf)
+
+//Map Styling
+
+.neighbourhoodContainer
+	flex 1
+	color white
+	text-shadow 10px
+	margin-top 5%
+	margin-left 10%
+	margin-right 10%
+	text-align center
+	max-width 80%
+	width 100%
+	//background-color: red
+	position absolute
+
+.map
+	height auto
+	width 100%
+
+.downtownList
+	position absolute
+	width 40%
+	height 40%
+	background-color goldenrod
+	opacity 0.6
+	top 20%
+	left 20%
+
+@media (max-width: 875px) {
+	.neighbourhoodContainer	{
+		max-width: 100%;
+		margin-left: 0px;
+	}
 }
 
-.boldText {
-	font-weight: bold
+@media (max-width: 690px) {
+	.downtownMap, .midtownMap, .corktownMap, .westVillageMap, .newCenterMap, .easternMarketMap, .rosedaleMap, .hamtramckMap {
+		position: static;
+	}
 }
+
+
+
+//Interest Icon Styling
+
+.iconContainer
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
+	justify-content space-around
+	-webkit-justify-content space-around
+	margin-left 6%
+	margin-right 6%
+	margin-top 8%
+	margin-bottom 13%
+
+
+//Footer Styling
+//.footerContainer
+//	position absolute
+//	right 0
+//	left 0
+//	bottom 0
+//	padding 1em
+//	text-align center
+
+// Fullpage Styling
+
+.site
+	display flex
+	display -webkit-flex
+	flex-direction column
+	-webkit-flex-direction column
+	min-height 100vh
+
+.footerContainer
+	position absolute
+
+	bottom 1%
+	width 100%
+	height 100%
+
+//Coffee shop styling 
+
+.shopSite
+	display flex
+	display -webkit-flex
+	flex-direction row
+	align-content: space-between
+
+
+.container1
+	display flex
+	display -webkit-flex
+	flex-direction column
+	justify-content space-around
+	align-items flex-start
+
+
+
+.container2
+	display flex
+	display -webkit-flex
+	flex-direction column
+	justify-content: space-around
+	align-items flex-end 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
