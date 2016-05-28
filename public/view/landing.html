@@ -1,19 +1,17 @@
-<div class="site">
-
 	<h2>First pick what your interest is...</h2>
 
 	<div class="iconContainer">
-		<img ng-click="chooseInterest('music')" src="../images/EntertainmentCircle.png" title="Entertainment"/>
-		<img ng-click="chooseInterest('work')" src="../images/WorkCircle.png" title="Productivity"/>
-		<img ng-click="chooseInterest('food')" src="../images/FoodCircle.png" title="Food"/>
-		<img ng-click="chooseInterest('social')" src="../images/SocialCircle.png" title="Socialising"/>
-		<img ng-click="chooseInterest('all')"src="../images/CoffeeCircle.png" title="I don't care, just give me coffee."/>
+		<img class="icon" ng-click="chooseInterest('music')" src="../images/EntertainmentCircle.png" title="Entertainment" />
+		<img class="icon" ng-click="chooseInterest('work')" src="../images/WorkCircle.png" title="Productivity" />
+		<img class="icon" ng-click="chooseInterest('food')" src="../images/FoodCircle.png" title="Food" />
+		<img class="icon" ng-click="chooseInterest('social')" src="../images/SocialCircle.png" title="Socialising" />
+		<img class="icon" ng-click="chooseInterest('all')"src="../images/CoffeeCircle.png" title="I don't care, just give me coffee." />
 	</div>
 
 	<h2>Then pick what neighbourhood you want to go to...</h2>
 
 	<div class="neighbourhoodContainer">
-		<img src="../images/DetroitMap.png" alt="Map of Detroit" usemap="#Map"/>
+		<img src="../images/DetroitMap.png" alt="Map of Detroit" usemap="#Map" />
 		<map name="Map" id="Map">
 		    <area alt="Downtown" title="Downtown" shape="poly" coords="498,474,537,437,567,428,595,415,613,408,640,394,656,389,648,371,638,358,621,357,598,357,580,358,562,363,540,368,525,368,511,368,500,368,493,368,476,377,474,392,476,409,480,426" ng-click="downtownList = !downtownList" id="downtown"/>
 		    <area alt="Corktown" title="Corktown" shape="poly" coords="344,338,341,356,333,367,322,369,323,395,325,403,332,399,334,410,343,423,349,431,359,447,364,459,398,455,440,447,464,434,475,421,471,392,473,379,484,369,482,355,459,345,433,337,394,337" ng-click="corktownList = !corktownList" id="corktown"/>
