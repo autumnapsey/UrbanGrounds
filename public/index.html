@@ -18,7 +18,6 @@
 	<script type="text/javascript" src="script/selectCtrl.js"></script>
 	<script type="text/javascript" src="script/displayCtrl.js"></script>
 	<script type="text/javascript" src="script/service.js"></script>
-
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!-- LightWidget WIDGET --><!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fdd28c2ac01b5133b9230c5a55e5e922.html" id="lightwidget_fdd28c2ac0" name="lightwidget_fdd28c2ac0"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
 
@@ -42,16 +41,15 @@
 	</script>
 </head>
 <body ng-app="app">
-	
-		<header>
-			<img src="images/UGlogo.png" id="logo" alt="Urban Grounds" />
-		</header>
+	<header>
+		<a href="#/"><img src="images/UGlogo.png" id="logo" alt="Urban Grounds"></a>
+		<h1></h1>
+	</header>
 	<div class="site">
-		<ul>
-			<li><a href="#/">Home</a></li>
-		</ul>
-		<ng-view></ng-view>
+	<ng-view></ng-view>
 	</div>
-
+	<div class="footerContainer">
+		<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
+	</div>
 </body>
 </html>

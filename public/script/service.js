@@ -30,7 +30,11 @@ app.factory('coffeeService', function($http){
 				name: 'Roasting Plant',
 				placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
 				description: 'The future is now when it comes to coffee at the Roasting Plant. Boasting a Jetsons worthy Javabot that brews your coffee, the Roasting Plant offers novelty and a good cup of coffee.',
+<<<<<<< HEAD
 				features: '',
+=======
+				features: 'house-roasted coffee, mad-scientist vibe, pneumatic tubes',
+>>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 				work: true,
 				social: true,
 				food: true,
@@ -53,7 +57,7 @@ app.factory('coffeeService', function($http){
 				name: 'Dessert Oasis',
 				placeID: 'ChIJzZVcTTAtO4gRe5sIIK-MgJs',
 				description: 'As the name implies, Dessert Oasis’ sweet treats are a welcome bonus to this Capital Park coffee shop. With ample seating options, and industrial atmosphere, it’s a great place to get to work.',
-				features: '',
+				features: 'house-roasted coffee, live music, treats',
 				work: true,
 				social: true,
 				food: false,
@@ -63,8 +67,13 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'The Bean Bar',
 				placeID: 'ChIJdyYY-zotO4gRSkl3yFB0L4U',
+<<<<<<< HEAD
 				description: 'The Bean Bar serves coffee, smoothies and light fare to workers in the Cobo area. You can’t miss it with it’s space-age sign. The hours are strictly breakfast and lunch, so don’t go looking for an evening pick-me-up.',
 				features: '',
+=======
+				description: 'The Bean Bar serves coffee, smoothies and light fare to workers in the Cobo area. You can’t miss it with its space-age sign. The hours are strictly breakfast and lunch, so don’t go looking for an evening pick-me-up.',
+				features: 'full menu, open early',
+>>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 				work: true,
 				social: true,
 				food: true,
@@ -89,7 +98,7 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'The Bottom Line',
 				placeID: 'ChIJOZ_JV6XSJIgRuE7W1bI52bY',
-				description: '',
+				description: 'Coffee and late-night studying go hand in hand; thankfully Wayne State University students have The Bottom Line nearby to keep them going. The shop offers a cozy spot for working or chatting with friends. ',
 				features: '',
 				work: false,
 				social: true,
@@ -100,7 +109,7 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'Fourteen East',
 				placeID: 'ChIJ8Vn3cL3SJIgRAN16yJ9YXVc',
-				description: '',
+				description: 'Located in the Park Shelton, Fourteen East is located in the cultural center of Midtown. The shop is in a clean, bright space that functions as a gallery as well. ',
 				features: '',
 				work: true,
 				social: true,
@@ -111,8 +120,8 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'Great Lakes Coffee',
 				placeID: 'ChIJi82DCLjSJIgRVh34r-ayWs0',
-				description: '',
-				features: '',
+				description: 'As far as coffee shops go, Great Lakes Coffee is the place to see and be seen in Detroit. This popular spot has coffee AND a bar that features high quality craft cocktails and local brews. ',
+				features: 'house-roasted coffee, unique food, fast wifi',
 				work: true,
 				social: true,
 				food: true,
@@ -123,7 +132,7 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'Avalon',
 				placeID: 'ChIJG1njurDSJIgRQOyfZl8DS3U',
-				description: '',
+				description: 'An anchor in the Cass Corridor community for almost 20 years, Avalon International Breads is known for their organic baked goods, but also serves up a good coffee drink. ',
 				features: '',
 				work: false,
 				social: true,
