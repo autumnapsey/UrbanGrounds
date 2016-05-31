@@ -29,8 +29,4 @@ app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog
         console.log($scope.downtownList);
     };
 
-    $scope.help = function(){
-    	console.log($scope.downtownList);
-    }
-
 });

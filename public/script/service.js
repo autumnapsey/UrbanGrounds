@@ -358,8 +358,14 @@ app.factory('coffeeService', function($http){
 
 	return {
 		filteredPlaces: filteredPlaces,
-		// neighborhood: neighborhood,
-		// showNeighborhood: showNeighborhood,
+		downtownList: false,
+		midtownList: false,
+		newcenterList: false,
+		corktownList: false,
+		westVillageList: false,
+		hamtramckList: false,
+		easternMarketList: false,
+		rosedaleParkList: false,
 		getDescription: getDescription,
 		getFeatures: getFeatures,
 		getLink: getLink,
