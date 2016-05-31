@@ -1,15 +1,9 @@
-
-body {
-  background-image: url("../images/honey_im_subtle.png");
-  font-family: arial;
-}
-
+background-image url("../images/coffeeGrey.png")*/,
 ul {
   list-style: none;
   text-align: left;
 }
 header {
-
   background-image: url("../images/honey_im_subtle.png");
   text-align: center;
   margin-left: 9%;
@@ -18,17 +12,14 @@ header {
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
-  border-bottom: 20px solid #C0E6DE;
+  border-bottom: 20px solid #c0e6de;
 }
 #logo {
   width: 75%;
-
 }
 h2 {
   margin-left: 4%;
   margin-top: 2%;
-  font-family: 'Raleway', sans-serif;
-
 }
 .boldText {
   font-weight: bold;
@@ -38,19 +29,17 @@ h2 {
   src: url("../fonts/RioGlamour2.otf");
 }
 .neighbourhoodContainer {
-
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
   text-align: center;
   width: 100%;
-
+}
 .map {
   height: auto;
   width: 100%;
 }
 .downtownList {
-
   background-color: #d9d9d9;
   top: 10%;
   left: 30%;
@@ -63,7 +52,7 @@ h2 {
   position: absolute;
   left: 30%;
   top: 170%;
-
+}
 @media (max-width: 875px) {
   .neighbourhoodContainer {
     max-width: 100%;
@@ -86,9 +75,11 @@ h2 {
   text-align: center;
 }
 .icon {
-  max-width: 19%;
+  max-width: 18%;
   min-width: 100px;
   height: auto;
+  background-color: #c0e6de;
+  border-radius: 50%;
 }
 .site {
   min-height: 100vh;
@@ -103,7 +94,6 @@ h2 {
   padding-right: 2%;
   border-raidus: 5px;
 }
-
 .shopSite {
   display: flex;
   display: -webkit-flex;
@@ -114,6 +104,7 @@ h2 {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: flex-start;
   width: 50%;
 }
@@ -125,50 +116,32 @@ h2 {
   align-items: flex-end;
   width: 50%;
 }
-
 .shopInstagram {
   height: auto;
-  width: 400px;
+  width: 350px;
+  height: 350px;
+  background-color: #f00;
 }
-
 .shopHours {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
 }
-
 .container1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
 }
-
 .shopName {
   height: 50px;
   width: 300px;
 }
-
 .shopName a:link {
-  color: #E88D67;
+  color: #e88d67;
   text-decoration: none;
-
 }
-
-/* visited link */
 .shopName a:visited {
-    color: #E88D67;
+  color: #e88d67;
 }
-
-/* mouse over link */
 .shopName a:hover {
-    color: #BB999C;
+  color: #bb999c;
 }
-
-/* selected link */
 .shopName a:active {
-    color: #C0E6DE;
+  color: #ccc OE6DE;
 }
-
-a:link {
-  text-decoration: none;
-}
-
-
-
-
