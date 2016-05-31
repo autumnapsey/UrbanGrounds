@@ -23,6 +23,7 @@ h2 {
 }
 body {
   font-family: robotoThin;
+  background-image: url("../images/honey_im_subtle.png");
 }
 .boldText {
   font-weight: bold;
@@ -40,6 +41,7 @@ body {
   src: url("../fonts/Roboto-Bold.ttf");
 }
 .neighbourhoodContainer {
+  flex: 2;
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
@@ -124,6 +126,7 @@ body {
   padding-right: 2%;
 }
 .footerContainer {
+  flex: 2;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
