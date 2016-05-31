@@ -1,6 +1,6 @@
 var app = angular.module('app');
 
-app.controller('selectCtrl', function($scope, coffeeService, $location) {
+app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog) {
 	$scope.chooseShop = function (region,num){
 		coffeeService.getShop(region,num);
 		$location.path('/coffeeshop')
@@ -20,5 +20,17 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.chooseInterest = function(interest){
 		$scope.places = coffeeService.selectCategory(interest);
 	}
+
+	$scope.clickToOpen = function (){
+        ngDialog.open({ 
+        	template: '../view/modal.html', 
+        	className: 'ngdialog-theme-default' 
+        });
+        console.log($scope.downtownList);
+    };
+
+    $scope.help = function(){
+    	console.log($scope.downtownList);
+    }
 
 });

@@ -340,7 +340,26 @@ app.factory('coffeeService', function($http){
 		return filteredPlaces;
 	}
 
+	// var neighborhood = {
+	// 	downtownList: false,
+	// 	midtownList: false,
+	// 	newcenterList: false,
+	// 	corktownList: false,
+	// 	westVillageList: false,
+	// 	hamtramckList: false,
+	// 	easternMarketList: false,
+	// 	rosedaleParkList: false
+	// };
+
+	// function showNeighborhood(area){
+	// 	console.log(area);
+	// 	return neighborhood.area = true;
+	// }
+
 	return {
+		filteredPlaces: filteredPlaces,
+		// neighborhood: neighborhood,
+		// showNeighborhood: showNeighborhood,
 		getDescription: getDescription,
 		getFeatures: getFeatures,
 		getLink: getLink,
