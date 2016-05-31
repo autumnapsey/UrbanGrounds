@@ -1,9 +1,11 @@
 
+
 background-image url("../images/coffeeGrey.png")*/
 
 // .rioGlamour
 // 	font-family rioGlamour
 // 	letter-spacing .25em
+
 
 
 ul
@@ -29,17 +31,30 @@ header
 h2
 	margin-left 4%
 	margin-top 2%
+	font-family robotoThin
+
+body
+	font-family robotoThin
 
 //Text Styling
 
 .boldText
 	font-weight: bold
 
-@fontface
-	font-family rioGlamour
-	src url(../fonts/RioGlamour2.otf)
+@font-face
+	font-family roboto
+	src url(../fonts/Roboto-Black.ttf)
 
-//Map Styling
+@font-face
+	font-family robotoThin
+	src url(../fonts/Roboto-Thin.ttf)
+
+@font-face
+	font-family robotoBold
+	src url(../fonts/Roboto-Bold.ttf)
+
+
+// MAP STYLING
 
 .neighbourhoodContainer
 	// flex 1
@@ -86,39 +101,40 @@ h2
 
 
 
-//Interest Icon Styling
+// ICON STYLING
 
 .iconContainer
 	text-align center
-	//display flex
-	//display -webkit-flex
-	//flex-direction row
-	//-webkit-flex-direction row
-	//justify-content space-around
-	//-webkit-justify-content space-around
-	// margin-left 6
-	// margin-right 6%
-	// margin-top 8%
-	// margin-bottom 13%
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
+	justify-content space-around
+	-webkit-justify-content space-around
+	margin-left 6%
+	margin-right 6%
+	margin-top 8%
+	margin-bottom 13%
+	height 100%
 
 .icon
-	max-width 18%
-	min-width 100px
-	height auto
-	background-color #C0E6DE
-	border-radius 50%
+	max-width 15%
+	max-height 15%
+	width 100%
+	height 100%
+
+.chosenIcon
+	max-width 15%
+	max-height 15%
+	width 100%
+	height 100%
+	border-radius: 50%
+	background-color: #f28d5f
 
 
-//Footer Styling
-//.footerContainer
-//	position absolute
-//	right 0
-//	left 0
-//	bottom 0
-//	padding 1em
-//	text-align center
 
-// Fullpage Styling
+
+// FULLPAGE STYLING
 
 .site
 	//display flex
@@ -135,30 +151,56 @@ h2
 	padding-bottom 4%
 	padding-left 2%
 	padding-right 2%
-	border-raidus 5px
 
-.shopSite 
+
+//	FOOTER STYLING
+
+.footerContainer
 	display flex
 	display -webkit-flex
 	flex-direction row
+	-webkit-flex-direction row
+	align-content space-between
+	justify-content center
+	margin-top 13%
+	margin-bottom 0%
+	font-size .8em
+	letter-spacing .13em
+
+
+
+
+// COFFEE SHOP STYLING
+
+.shopSite
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
 	align-content space-between
 
 .container1 
 	display flex
 	display -webkit-flex
 	flex-direction column
+	-webkit-flex-direction column
 	justify-content space-around
+	-webkit-justify-content space-around
 	align-items flex-start
+	-webkit-align-items flex-start
 	width 50%
+
 
 .container2 
 	display flex
 	display -webkit-flex
 	flex-direction column
+	-webkit-flex-direction column
 	justify-content space-around
+	-webkit-justify-content space-around
 	align-items flex-end
+	-webkit-align-items flex-end
 	width 50%
-
 
 
 .shopInstagram 
@@ -182,19 +224,18 @@ h2
 
 .shopName a:link
 	color: #E88D67
-	text-decoration: none
+	text-decoration none
 
 .shopName a:visited
-	color: #E88D67
+	color #E88D67
 
 .shopName a:hover
-	color: #BB999C
+	color #BB999C
 
 .shopName a:active
-	color: #COE6DE
+	color #COE6DE
 
-
-
-
+.socialButton
+	text-decoration none
 
 

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$.backstretch("../images/coffeeGrey.png");
 });
 
