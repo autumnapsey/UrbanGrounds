@@ -1,0 +1,59 @@
+
+<div class="shopSite">
+
+	<div class="container1">
+
+		<div class="shopName">
+			<h2><a href="{{coffeeShop.website}}">{{coffeeShop.name}}</a></h2>
+		</div>
+
+		<p class="shopDescription">{{getDescription()}}</p>
+
+		<p class="shopFeatures"><span class="boldText">Features: </span>{{getFeatures()}}</p>
+
+		<div class="shopDetails">
+			<p class="address"><span class="boldText">Address: </span>{{coffeeShop.formatted_address}}</p>
+			<p class="phone"><span class="boldText">Phone: </span>{{coffeeShop.formatted_phone_number}}</p>
+			<p class="openNow"><span class="boldText">{{openNow()}}</span></p>
+
+			<p class="rating"><span class="boldText">Rating: </span> {{coffeeShop.rating}}/5</p>
+		</div>
+		<img src="images/google.png" alt="" id="googleLogo">
+	</div>
+
+	<div class="container2">
+
+		<!-- SnapWidget -->
+		<div class="shopInstagram">
+			<script src="https://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="https://snapwidget.com/embed/177107" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+		</div>
+
+		<div class="shopHours">
+			<p><span class="boldText">Weekly Hours:</span></p>
+			<p>
+			{{coffeeShop.opening_hours.weekday_text[0]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[1]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[2]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[3]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[4]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[5]}}<br />
+			{{coffeeShop.opening_hours.weekday_text[6]}}<br />
+			</p>
+		</div>
+
+		<div id="socialButtonsDesktop">
+			<!-- Share on Facebook button -->
+				<a href="http://www.facebook.com/share.php?u=https://.us&title=Crafted: Beer Meets Food" data-href="https://beermeetsfood.us" data-layout="img">
+					<!--button id="fbButton"-->
+					<img src="images/facebook.png" alt="" id="fbLogo">
+					<!--/button-->
+				</a>	
+				<!-- Share on Twitter button -->
+				<a href="http://twitter.com/intent/tweet?status=I found the perfect coffee shop using+https://urbangrounds.co!">
+					
+					<img src="images/twitter.png" alt="" id="twitterLogo">
+				</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,167 @@
+/*body
+	background-image url("../images/coffeebg.jpeg")*/
+ul {
+  list-style: none;
+  text-align: left;
+}
+header {
+  background-image: url("../images/honey_im_subtle.png");
+  text-align: center;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-bottom: 20px solid #C0E6DE;
+}
+#logo {
+  width: 75%;
+}
+h2 {
+  margin-left: 4%;
+  margin-top: 2%;
+  font-family: 'Raleway', sans-serif;
+}
+.boldText {
+  font-weight: bold;
+}
+@fontface {
+  font-family: rioGlamour;
+  src: url("../fonts/RioGlamour2.otf");
+}
+.neighbourhoodContainer {
+  color: #fff;
+  text-shadow: 10px;
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+}
+.map {
+  height: auto;
+  width: 100%;
+}
+.downtownList {
+  background-color: #d9d9d9;
+  top: 10%;
+  left: 30%;
+  opacity: 0.85;
+  color: #000;
+  height: 24%;
+  width: 34%;
+  padding: 3.2%;
+  border-radius: 20px;
+  position: absolute;
+  left: 30%;
+  top: 170%;
+}
+@media (max-width: 875px) {
+  .neighbourhoodContainer {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 690px) {
+  .downtownMap,
+  .midtownMap,
+  .corktownMap,
+  .westVillageMap,
+  .newCenterMap,
+  .easternMarketMap,
+  .rosedaleMap,
+  .hamtramckMap {
+    position: static;
+  }
+}
+.iconContainer {
+  text-align: center;
+}
+.icon {
+  max-width: 19%;
+  min-width: 100px;
+  height: auto;
+}
+.site {
+  min-height: 100vh;
+  background-color: rgba(255,255,255,0.95);
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 4%;
+  align-content: vertical;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-raidus: 5px;
+}
+
+.shopSite {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.container1 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.container2 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.shopInstagram {
+  height: auto;
+  width: 400px;
+}
+
+.shopHours {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.shopName {
+  height: 50px;
+  width: 300px;
+}
+
+.shopName a:link {
+  color: #E88D67;
+  text-decoration: none;
+
+}
+
+/* visited link */
+.shopName a:visited {
+    color: #E88D67;
+}
+
+/* mouse over link */
+.shopName a:hover {
+    color: #BB999C;
+}
+
+/* selected link */
+.shopName a:active {
+    color: #C0E6DE;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+
+
+
+

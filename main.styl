@@ -1,0 +1,164 @@
+/*body
+	background-image url("../images/coffeebg.jpeg")*/
+
+// .rioGlamour
+// 	font-family rioGlamour
+// 	letter-spacing .25em
+
+
+ul
+	list-style none
+	text-align left
+
+header
+	background-image url("../images/honey_im_subtle.png")
+	// margin 0px
+	// padding 0px
+	text-align center
+	margin-left 9%
+	margin-right 9%
+	padding-top 2%
+	padding-bottom 2%
+	padding-left 2%
+	padding-right 2%
+
+#logo
+	width 75%
+
+h2
+	margin-left 4%
+	margin-top 2%
+
+//Text Styling
+
+.boldText
+	font-weight: bold
+
+@fontface
+	font-family rioGlamour
+	src url(../fonts/RioGlamour2.otf)
+
+//Map Styling
+
+.neighbourhoodContainer
+	// flex 1
+	color white
+	text-shadow 10px
+	margin-top 5%
+	//margin-left 10%
+	//margin-right 10%
+	text-align center
+	//max-width 80%
+	width 100%
+	//position absolute
+
+.map
+	height auto
+	width 100%
+
+.downtownList
+	background-color #d9d9d9
+	top 10%
+	left 30%
+	opacity 0.85
+	color black
+	height 24%
+	width 34%
+	padding 3.2%
+	border-radius 20px
+	position absolute
+	left 30%
+	top 170%
+
+@media (max-width: 875px) {
+	.neighbourhoodContainer	{
+		max-width: 100%;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 690px) {
+	.downtownMap, .midtownMap, .corktownMap, .westVillageMap, .newCenterMap, .easternMarketMap, .rosedaleMap, .hamtramckMap {
+		position: static;
+	}
+}
+
+
+
+//Interest Icon Styling
+
+.iconContainer
+	text-align center
+	//display flex
+	//display -webkit-flex
+	//flex-direction row
+	//-webkit-flex-direction row
+	//justify-content space-around
+	//-webkit-justify-content space-around
+	// margin-left 6
+	// margin-right 6%
+	// margin-top 8%
+	// margin-bottom 13%
+
+.icon
+	max-width 19%
+	min-width 100px
+	height auto
+
+
+//Footer Styling
+//.footerContainer
+//	position absolute
+//	right 0
+//	left 0
+//	bottom 0
+//	padding 1em
+//	text-align center
+
+// Fullpage Styling
+
+.site
+	//display flex
+	//display -webkit-flex
+	//flex-direction column
+	//-webkit-flex-direction column
+	min-height 100vh
+	background-color rgba(255, 255, 255, .95)
+	margin-left 9%
+	margin-right 9%
+	margin-bottom 4%
+	align-content vertical
+	padding-top 4%
+	padding-bottom 4%
+	padding-left 2%
+	padding-right 2%
+	border-raidus 5px
+
+// .footerContainer
+// 	position absolute
+// 	bottom 1%
+// 	width 100%
+// 	height 100%
+
+shopSite 
+  display flex
+  display -webkit-flex
+  flex-direction row
+  align-content space-between
+
+container1 
+  display flex
+  display -webkit-flex
+  flex-direction column
+  justify-content space-around
+  align-items flex-start
+  width 50%
+
+.container2 
+  display flex
+  display -webkit-flex
+  flex-direction column
+  justify-content space-around
+  align-items flex-end
+  width 50%
+
