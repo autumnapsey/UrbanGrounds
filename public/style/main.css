@@ -1,10 +1,15 @@
-/*body
-	background-image url("../images/coffeebg.jpeg")*/
+
+body {
+  background-image: url("../images/honey_im_subtle.png");
+  font-family: arial;
+}
+
 ul {
   list-style: none;
   text-align: left;
 }
 header {
+
   background-image: url("../images/honey_im_subtle.png");
   text-align: center;
   margin-left: 9%;
@@ -17,11 +22,13 @@ header {
 }
 #logo {
   width: 75%;
+
 }
 h2 {
   margin-left: 4%;
   margin-top: 2%;
   font-family: 'Raleway', sans-serif;
+
 }
 .boldText {
   font-weight: bold;
@@ -31,17 +38,19 @@ h2 {
   src: url("../fonts/RioGlamour2.otf");
 }
 .neighbourhoodContainer {
+
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
   text-align: center;
   width: 100%;
-}
+
 .map {
   height: auto;
   width: 100%;
 }
 .downtownList {
+
   background-color: #d9d9d9;
   top: 10%;
   left: 30%;
@@ -54,7 +63,7 @@ h2 {
   position: absolute;
   left: 30%;
   top: 170%;
-}
+
 @media (max-width: 875px) {
   .neighbourhoodContainer {
     max-width: 100%;
@@ -159,8 +168,6 @@ h2 {
 a:link {
   text-decoration: none;
 }
-
-
 
 
 

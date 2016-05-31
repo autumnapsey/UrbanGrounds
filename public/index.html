@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o&libraries=places"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="script/app.js"></script>
 	<script type="text/javascript" src="script/selectCtrl.js"></script>
@@ -15,17 +16,42 @@
 	<script type="text/javascript" src="jquery.modal.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!-- LightWidget WIDGET --><!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fdd28c2ac01b5133b9230c5a55e5e922.html" id="lightwidget_fdd28c2ac0" name="lightwidget_fdd28c2ac0"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
-</head>
-<body ng-app="app" class="rioGlamour">
-	
-		<header>
-			<img src="images/UGlogo.png" id="logo" alt="Urban Grounds" />
-		</header>
-	<div class="site">
-		<ul>
-			<li><a href="#/">Home</a></li>
-		</ul>
-		<ng-view></ng-view>
+
+	<!-- for the facebook button -->
+	<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+	  		var js, fjs = d.getElementsByTagName(s)[0];
+	  		if (d.getElementById(id)) return;
+	  		js = d.createElement(s); js.id = id;
+	  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
+	  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 	</div>
+	<!-- for the twitter button -->
+	<script>
+	!function(d,s,id){
+		var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+		if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+	</script>
+		
+	<!-- LightWidget WIDGET --><!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fdd28c2ac01b5133b9230c5a55e5e922.html" id="lightwidget_fdd28c2ac0" name="lightwidget_fdd28c2ac0"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+</head> -->
+
+</head>
+<body ng-app="app">
+	<header>
+		<img src="images/UGlogo.png" id="logo" alt="Urban Grounds" />
+		<h1></h1>
+	</header>
+
+	<ul>
+		<li><a href="#/">Home</a></li>
+	</ul>
+	<ng-view></ng-view>
+
+
+
 </body>
 </html>

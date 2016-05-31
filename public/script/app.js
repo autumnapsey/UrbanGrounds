@@ -2,7 +2,6 @@ $(document).ready(function(){
 	$.backstretch("../images/coffeeGrey.png");
 });
 
-
 var app = angular.module('app',['ngRoute']);
 
 app.config(function($routeProvider) {
