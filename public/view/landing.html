@@ -1,11 +1,11 @@
 <h2>First pick what your interest is...</h2>
 
 <div class="iconContainer">
-	<img class="icon" ng-click="chooseInterest('music')" src="../images/EntertainmentCircle.png" title="Entertainment"/>
-	<img class="icon" ng-click="chooseInterest('work')" src="../images/WorkCircle.png" title="Productivity"/>
-	<img class="icon" ng-click="chooseInterest('food')" src="../images/FoodCircle.png" title="Food"/>
-	<img class="icon" ng-click="chooseInterest('social')" src="../images/SocialCircle.png" title="Socialising"/>
-	<img class="icon" ng-click="chooseInterest('all')"src="../images/CoffeeCircle.png" title="I don't care, just give me coffee."/>
+	<img ng-class="class" ng-click="chooseInterest('music'); changeClass($event)" src="../images/EntertainmentCircle.png" title="Entertainment"/>
+	<img ng-class="class" ng-click="chooseInterest('work'); changeClass($event)" src="../images/WorkCircle.png" title="Productivity"/>
+	<img ng-class="class" ng-click="chooseInterest('food'); changeClass($event)" src="../images/FoodCircle.png" title="Food"/>
+	<img ng-class="class" ng-click="chooseInterest('social'); changeClass($event)" src="../images/SocialCircle.png" title="Socialising"/>
+	<img ng-class="class" ng-click="chooseInterest('all'); changeClass($event)"src="../images/CoffeeCircle.png" title="I don't care, just give me coffee."/>
 </div>
 
 <h2>Then pick what neighborhood you want to go to...</h2>
@@ -73,5 +73,5 @@
 </div>
 
 <div class="footerContainer">
-	<p>Footer</p>
+	<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
 </div>

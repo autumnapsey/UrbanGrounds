@@ -20,16 +20,27 @@ header {
 h2 {
   margin-left: 4%;
   margin-top: 2%;
+  font-family: robotoThin;
+}
+body {
+  font-family: robotoThin;
 }
 .boldText {
   font-weight: bold;
 }
-@fontface {
-  font-family: rioGlamour;
-  src: url("../fonts/RioGlamour2.otf");
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: robotoThin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: robotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 .neighbourhoodContainer {
-  flex: 1;
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
@@ -95,6 +106,14 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.chosenIcon {
+  max-width: 15%;
+  max-height: 15%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f28d5f;
+}
 .site {
   display: flex;
   display: -webkit-flex;
@@ -110,6 +129,18 @@ h2 {
   padding-bottom: 4%;
   padding-left: 2%;
   padding-right: 2%;
+}
+.footerContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  margin-top: 13%;
+  margin-bottom: 0%;
+  font-size: 0.8em;
+  letter-spacing: 0.13em;
 }
 .shopSite {
   display: flex;
