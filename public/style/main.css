@@ -75,7 +75,7 @@ h2 {
   text-align: center;
 }
 .icon {
-  max-width: 19%;
+  max-width: 18%;
   min-width: 100px;
   height: auto;
 }
@@ -91,4 +91,24 @@ h2 {
   padding-left: 2%;
   padding-right: 2%;
   border-raidus: 5px;
+}
+.shopSite {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.container1 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container2 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }

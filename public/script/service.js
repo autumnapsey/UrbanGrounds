@@ -7,7 +7,7 @@ app.factory('coffeeService', function($http){
 				name: 'ASHE Supply Co.',
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
 				description: 'Detroit’s new kid on the coffee block, ASHE Supply Co. feels like it’s already well established in the neighborhood. Servicing the many startups that share the Madison Building, the coffee shop has blazing fast Rocket Fiber wifi. It serves up Detroit food favorites like Detroit Institute of Bagels and Sister Pie, making it a great place to work or meet up with friends.',
-				features: '',
+				features: 'house-roasted coffee, fast wifi, local snacks',
 				work: true,
 				food: true,
 				social: true,
@@ -183,7 +183,7 @@ app.factory('coffeeService', function($http){
 				placeID: 'ChIJQZSTxVktO4gR_qjDkKNYauk',
 				description: '',
 				features: '',
-				work: true,
+				work: false,
 				social: true,
 				food: true,
 				music: false,
@@ -323,6 +323,9 @@ app.factory('coffeeService', function($http){
 	function getDescription(){
 		return selectedShop.description;
 	}
+	function getFeatures(){
+		return selectedShop.features;
+	}
 	function getShop(region,shop){
 				selectedShop = region[shop];
 	}
@@ -339,6 +342,7 @@ app.factory('coffeeService', function($http){
 
 	return {
 		getDescription: getDescription,
+		getFeatures: getFeatures,
 		getLink: getLink,
 		getShop: getShop,
 		places: places,
