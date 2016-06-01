@@ -8,16 +8,19 @@
 	<img ng-class="class" ng-click="chooseInterest('all'); changeClass($event)"src="../images/CoffeeCircle.png" title="I don't care, just give me coffee."/>
 </div>
 
-<h2>Then pick what neighborhood you want to go to...</h2>
+<h2 neighbourhoodPickerHeader>Then pick what neighborhood you want to go to...</h2>
 
-<div class="neighbourhoodContainer">
-	<div class="neighbourhoodIconContainer">
+
+<div class="neighbourhoodIconContainer">
 	    <img src="../images/neighbourhoodIcons/circleDowntown.png" ng-click="downtownList = !downtownList" id="downtown" class="neighbourhoodIcon"/>
 	    <img src="../images/neighbourhoodIcons/circleCorktown.png" ng-click="corktownList = !corktownList" id="corktown" class="corktownIcon neighbourhoodIcon"/>
 	    <img src="../images/neighbourhoodIcons/circleMidtown.png" ng-click="midtownList = !midtownList" id="midtown" class="midtownIcon neighbourhoodIcon"/>
 	    <img src="../images/neighbourhoodIcons/circleEasternMarket.png" ng-click="easternMarketList = !easternMarketList" id="easternMarket" class="easternMarketIcon neighbourhoodIcon"/>
 	    <img src="../images/neighbourhoodIcons/circleNewCenter.png" ng-click="newcenterList = !newcenterList" id="newcenter" class="newCenterIcon neighbourhoodIcon"/>
-	</div>
+</div>
+
+<h2 clsss="coffeePickerheader">Now choose your coffee shop!</h2>
+<div class="neighbourhoodContainer">
 
 	<div ng-show="downtownList" class="downtownList">
 		<ul ng-show="downtownList">
