@@ -18,14 +18,14 @@
 		</ul>
 	</div>
 
-	<div class="getList('corktownList')">
-		<ul ng-show="corktownList">
+	<div class="corktownMap">
+		<ul ng-show="getList('corktownList')">
 			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
-	<div class="getList('easternMarketList')">
-		<ul ng-show="easternMarketList">
+	<div class="easternMarketMap">
+		<ul ng-show="getList('easternMarketList')">
 			<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>
 		</ul>
 	</div>
