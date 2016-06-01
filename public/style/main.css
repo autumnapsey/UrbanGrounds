@@ -1,5 +1,4 @@
 background-image url("../images/coffeeGrey.png"),
-
 ul {
   list-style: none;
   text-align: left;
@@ -42,6 +41,10 @@ body {
   font-family: robotoBold;
   src: url("../fonts/Roboto-Bold.ttf");
 }
+@font-face {
+  font-family: robotoCondensed;
+  src: url("../fonts/Roboto-Condensed.ttf");
+}
 .neighbourhoodContainer {
   flex: 2;
   display: flex;
@@ -78,28 +81,22 @@ body {
   border-radius: 50%;
   background-color: #f28d5f;
 }
-.downtownList {
-  background-color: #d9d9d9;
-  top: 10%;
-  left: 30%;
-  opacity: 0.9;
-  color: #000;
-  height: 24%;
-  width: 15%;
-  padding: 3.2%;
-  border-radius: 20px;
-  position: absolute;
-  left: 30%;
-  top: 170%;
-  list-style: none;
-}
 .neighbourhoodPickerHeader {
   margin-bottom: 10%;
 }
-
 .coffeePickerHeader {
   margin-top: 5%;
   margin-bottom: 2%;
+}
+.downtownList {
+  color: #000;
+  list-style: none;
+  letter-spacing: 0.21em;
+  font-size: 1.5em;
+  font-family: robotoCondensed;
+}
+li:hover {
+  color: #f28d5f;
 }
 .iconContainer {
   text-align: center;
