@@ -50,19 +50,19 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.neighbourhoodClass = "neighbourhoodIcon";
 	$scope.changeNeighbourhoodClass = function(event){
 		console.log(event);
-		var neighbourhoodElement = event.target;
-		if(isNeighbourhoodObjectEmpty(lastNeighbourhoodElement)){
-			$(lastNeighbourhoodElement).removeClass("chosenNeighbourhoodIcon").addClass("neighbourhoodIcon");
+		var element = event.target;
+		if(isNeighbourhoodObjectEmpty(lastElement)){
+			$(lastElement).removeClass("chosenNeighbourhoodIcon").addClass("neighbourhoodIcon");
 		}
 
-		$(neighbourhoodElement).addClass("chosenNeighbourhoodIcon");
+		$(element).addClass("chosenNeighbourhoodIcon");
 
-		lastNeighbourhoodElement = event.target;
+		lastElement = event.target;
 
 	}
 
-	function isNeighbourhoodObjectEmpty(neighbourhoodElement) {
-		return Object.keys(lastneighbourhoodElement).length > 0;
+	function isNeighbourhoodObjectEmpty(element) {
+		return Object.keys(lastElement).length > 0;
 	}
 
 
