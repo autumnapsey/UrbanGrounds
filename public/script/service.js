@@ -30,11 +30,7 @@ app.factory('coffeeService', function($http){
 				name: 'Roasting Plant',
 				placeID: 'ChIJUwca7i8tO4gRC6azALL0VXY',
 				description: 'The future is now when it comes to coffee at the Roasting Plant. Boasting a Jetsons worthy Javabot that brews your coffee, the Roasting Plant offers novelty and a good cup of coffee.',
-<<<<<<< HEAD
-				features: '',
-=======
 				features: 'house-roasted coffee, mad-scientist vibe, pneumatic tubes',
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 				work: true,
 				social: true,
 				food: true,
@@ -67,13 +63,8 @@ app.factory('coffeeService', function($http){
 			{
 				name: 'The Bean Bar',
 				placeID: 'ChIJdyYY-zotO4gRSkl3yFB0L4U',
-<<<<<<< HEAD
-				description: 'The Bean Bar serves coffee, smoothies and light fare to workers in the Cobo area. You can’t miss it with it’s space-age sign. The hours are strictly breakfast and lunch, so don’t go looking for an evening pick-me-up.',
-				features: '',
-=======
 				description: 'The Bean Bar serves coffee, smoothies and light fare to workers in the Cobo area. You can’t miss it with its space-age sign. The hours are strictly breakfast and lunch, so don’t go looking for an evening pick-me-up.',
 				features: 'full menu, open early',
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 				work: true,
 				social: true,
 				food: true,
@@ -197,7 +188,6 @@ app.factory('coffeeService', function($http){
 				food: true,
 				music: false,
 				all: true
-// needs categories
 			},
 			{
 				name: 'Anthology Coffee',
@@ -209,7 +199,6 @@ app.factory('coffeeService', function($http){
 				food: false,
 				music: false,
 				all: true
-// needs categories
 			}
 		],
 		westVillage: [
@@ -349,24 +338,7 @@ app.factory('coffeeService', function($http){
 		return filteredPlaces;
 	}
 
-	// var neighborhood = {
-	// 	downtownList: false,
-	// 	midtownList: false,
-	// 	newcenterList: false,
-	// 	corktownList: false,
-	// 	westVillageList: false,
-	// 	hamtramckList: false,
-	// 	easternMarketList: false,
-	// 	rosedaleParkList: false
-	// };
-
-	// function showNeighborhood(area){
-	// 	console.log(area);
-	// 	return neighborhood.area = true;
-	// }
-
-	return {
-		filteredPlaces: filteredPlaces,
+	var neighborhood = {
 		downtownList: false,
 		midtownList: false,
 		newcenterList: false,
@@ -374,7 +346,20 @@ app.factory('coffeeService', function($http){
 		westVillageList: false,
 		hamtramckList: false,
 		easternMarketList: false,
-		rosedaleParkList: false,
+		rosedaleParkList: false
+	};
+
+	function changeListShow(area){
+		console.log('changeListShow in service firing')
+		if(neighborhood.area === false){
+			return neighborhood.area = true;
+		} else {
+			return neighborhood.area = false;
+		}	
+	}
+
+	return {
+		changeListShow: changeListShow,
 		getDescription: getDescription,
 		getFeatures: getFeatures,
 		getLink: getLink,

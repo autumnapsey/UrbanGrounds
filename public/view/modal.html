@@ -1,23 +1,16 @@
 
-
-<div ng-controller="selectCtrl">
-
-	<p>blah blah blah</p>
-	
-
-	<div class="downtownMap">
+	<div ng-show="downtownList" class="downtownList">
 		<ul ng-show="downtownList">
 			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
-
 
 	<div class="midtownMap">
 		<ul ng-show="midtownList">
 			<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
-<!--
+
 	<div class="newCenterMap">
 		<ul ng-show="newcenterList">
 			<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index)">{{store.name}}</li>
@@ -53,7 +46,4 @@
 			<li ng-repeat="store in places.rosedalePark track by $index" ng-click="chooseShop(places.rosedalePark,$index)">{{store.name}}</li>
 		</ul>
 	</div>
-
 </div>
-
--->

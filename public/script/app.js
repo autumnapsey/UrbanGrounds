@@ -1,19 +1,8 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-	$.backstretch("../images/coffeebg.jpeg");
-});
-
-var app = angular.module('app',['ngRoute', 'ngDialog']);
-=======
-=======
-
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 	$.backstretch("../images/coffeeGrey.png");
 });
 
-var app = angular.module('app',['ngRoute']);
->>>>>>> eebd554c3ec113af181f1f290ecceab0295a2325
+var app = angular.module('app',['ngRoute', 'ngDialog']);
 
 app.config(function($routeProvider) {
 	$routeProvider
@@ -27,3 +16,12 @@ app.config(function($routeProvider) {
 	});
 });
 
+app.controller('footerCtrl', function($scope, ngDialog){
+	$scope.clickForAbout = function (){
+        ngDialog.open({ 
+        	template: '../view/about.html', 
+        	className: 'ngdialog-theme-default',
+        	width: '80%' 
+        });
+    };
+})

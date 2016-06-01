@@ -1,12 +1,8 @@
 var app = angular.module('app');
 
-<<<<<<< HEAD
 app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog) {
-=======
-app.controller('selectCtrl', function($scope, coffeeService, $location) {
-	var lastElement = {};
 
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
+	var lastElement = {};
 	$scope.chooseShop = function (region,num){
 		coffeeService.getShop(region,num);
 		$location.path('/coffeeshop')
@@ -24,7 +20,6 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.rosedaleParkList = false;
 
 	$scope.chooseInterest = function(interest){
-		console.log('a;sdlfjkas;dlfjk')
 		$scope.places = coffeeService.selectCategory(interest);
 	};
 
@@ -41,8 +36,12 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 		lastElement = event.target;
 	}
 
-	function isObjectEmpty(element) {
+	function isObjectEmpty(element){
 		return Object.keys(lastElement).length > 0;
+	}
+
+	$scope.changeListShow = function(neighborhood){
+		$scope.changeListShow = coffeeService.changeListShow(neighborhood);
 	}
 
 	$scope.clickToOpen = function (){

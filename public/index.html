@@ -2,21 +2,20 @@
 <html>
 <head>
 	<title>Urban Grounds</title>
-	<!--CSS files-->
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
 	<link rel="stylesheet" type="text/css" href="/style/ngDialog.min.css">
 	<link rel="stylesheet" type="text/css" href="/style/ngDialog-theme-default.min.css">
-	<link rel="stylesheet" type="text/css" href="/style/main.css">
-	<!--jQuery files-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-	<!--Angular files-->
+	<link rel="stylesheet" type="text/css" href="/style/ngDialog-custom-width.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script type="text/javascript" src="script/ngDialog.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o&libraries=places"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="script/app.js"></script>
 	<script type="text/javascript" src="script/selectCtrl.js"></script>
 	<script type="text/javascript" src="script/displayCtrl.js"></script>
+	<script type="text/javascript" src="script/modalCtrl.js"></script>
 	<script type="text/javascript" src="script/service.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!-- LightWidget WIDGET --><!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fdd28c2ac01b5133b9230c5a55e5e922.html" id="lightwidget_fdd28c2ac0" name="lightwidget_fdd28c2ac0"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
@@ -28,7 +27,7 @@
 	  		var js, fjs = d.getElementsByTagName(s)[0];
 	  		if (d.getElementById(id)) return;
 	  		js = d.createElement(s); js.id = id;
-	  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
+	  		// js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
 	  		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
@@ -40,16 +39,18 @@
 		if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 	</script>
 </head>
-<body ng-app="app">
-	<header>
-		<a href="#/"><img src="images/UGlogo.png" id="logo" alt="Urban Grounds"></a>
-		<h1></h1>
-	</header>
-	<div class="site">
-	<ng-view></ng-view>
-	</div>
-	<div class="footerContainer">
-		<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
-	</div>
-</body>
+
+	<body ng-app="app">
+		<header>
+			<a href="#/"><img src="images/UGlogo.png" id="logo" alt="Urban Grounds"></a>
+			<h1></h1>
+		</header>
+		<div class="site">
+		<ng-view></ng-view>
+			<div class="footerContainer" ng-controller="footerCtrl">
+				<a href="" ng-click="clickForAbout()">About the Creators</a>
+				<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
+			</div>
+		</div>
+	</body>
 </html>

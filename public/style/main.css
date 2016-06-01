@@ -11,10 +11,7 @@ header {
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
-<<<<<<< HEAD
-=======
   border-bottom: 20px solid #c0e6de;
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 }
 #logo {
   width: 75%;
@@ -22,14 +19,11 @@ header {
 h2 {
   margin-left: 4%;
   margin-top: 2%;
-<<<<<<< HEAD
-  font-family: 'Raleway', sans-serif;
-=======
   font-family: robotoThin;
 }
 body {
   font-family: robotoThin;
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
+  background-image: url("../images/honey_im_subtle.png");
 }
 .boldText {
   font-weight: bold;
@@ -47,7 +41,8 @@ body {
   src: url("../fonts/Roboto-Bold.ttf");
 }
 .neighbourhoodContainer {
-  color: #fff;
+  flex: 2;
+  color: #000;
   text-shadow: 10px;
   margin-top: 5%;
   text-align: center;
@@ -58,11 +53,7 @@ body {
   width: 100%;
 }
 .downtownList {
-<<<<<<< HEAD
   background-color: #d9d9d9;
-=======
-  background-color: #f00;
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
   top: 10%;
   left: 30%;
   opacity: 0.9;
@@ -74,8 +65,6 @@ body {
   position: absolute;
   left: 30%;
   top: 170%;
-<<<<<<< HEAD
-=======
   list-style: none;
 }
 @media (max-width: 875px) {
@@ -95,7 +84,6 @@ body {
   .hamtramckMap {
     position: static;
   }
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 }
 .iconContainer {
   text-align: center;
@@ -112,27 +100,6 @@ body {
   height: 100%;
 }
 .icon {
-<<<<<<< HEAD
-  max-width: 18%;
-  min-width: 100px;
-  height: auto;
-  text-align: center;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  margin-left: 6;
-  margin-right: 6%;
-  margin-top: 8%;
-  margin-bottom: 13%;
-}
-.icon {
-  max-width: 19%;
-  min-width: 100px;
-  height: auto;
-=======
   max-width: 15%;
   max-height: 15%;
   width: 100%;
@@ -145,7 +112,6 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #f28d5f;
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 }
 .site {
   min-height: 100vh;
@@ -159,9 +125,8 @@ body {
   padding-left: 2%;
   padding-right: 2%;
 }
-<<<<<<< HEAD
-=======
 .footerContainer {
+  flex: 2;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -173,7 +138,6 @@ body {
   font-size: 0.8em;
   letter-spacing: 0.13em;
 }
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 .shopSite {
   display: flex;
   display: -webkit-flex;
@@ -182,20 +146,6 @@ body {
   align-content: space-between;
   -webkit-align-content: space-between;
 }
-<<<<<<< HEAD
-.shopSite,
-display flex,
-display -webkit-flex,
-flex-direction row,
-align-content space-between,
-.container1,
-flex-direction column,
-justify-content space-around,
-align-items flex-start,
-width 50%,
-.container2,
-align-items flex-end,
-=======
 .container1 {
   display: flex;
   display: -webkit-flex;
@@ -213,19 +163,16 @@ align-items flex-end,
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
+  align-items: left;
+  justify-content: left;
   width: 50%;
   margin-right: 5%;
 }
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 .shopInstagram {
   height: auto;
   width: 350px;
   height: 350px;
-  background-color: #f00;
+  background-color: #c0e6de;
 }
 .shopHours {
   font-family: Raleway, sans-serif;
@@ -241,16 +188,6 @@ align-items flex-end,
 .shopName a:link {
   color: #e88d67;
   text-decoration: none;
-<<<<<<< HEAD
-}
-.shopName a:visited,
-color: #E88D67,
-.shopName a:hover,
-color: #BB999C,
-.shopName a:active,
-color #C0E6DE,
-a:link {
-=======
 }
 .shopName a:visited {
   color: #e88d67;
@@ -262,6 +199,11 @@ a:link {
   color: #ccc OE6DE;
 }
 .socialButton {
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
   text-decoration: none;
+}
+.aboutDiv {
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }

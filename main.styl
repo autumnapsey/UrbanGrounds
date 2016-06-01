@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
+// BASIC STYLING
 
-
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 ul
 	list-style none
 	text-align left
@@ -30,8 +27,9 @@ h2
 
 body
 	font-family robotoThin
+	background-image url("../images/honey_im_subtle.png")
 
-//Text Styling
+// TEXT STYLING
 
 .boldText
 	font-weight: bold
@@ -52,8 +50,9 @@ body
 // MAP STYLING
 
 .neighbourhoodContainer
-	// flex 1
-	color white
+
+	flex 2
+	color black
 	text-shadow 10px
 	margin-top 5%
 	//margin-left 10%
@@ -68,8 +67,7 @@ body
 	width 100%
 
 .downtownList
-	//background-color #d9d9d9
-	background-color red
+	background-color #d9d9d9
 	top 10%
 	left 30%
 	opacity 0.90
@@ -83,30 +81,23 @@ body
 	top 170%
 	list-style none
 
+@media (max-width: 875px) {
+	.neighbourhoodContainer	{
+		max-width: 100%;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 690px) {
+	.downtownMap, .midtownMap, .corktownMap, .westVillageMap, .newCenterMap, .easternMarketMap, .rosedaleMap, .hamtramckMap {
+		position: static;
+	}
+}
 
 
 // ICON STYLING
 
 .iconContainer
-<<<<<<< HEAD
-	text-align center
-	//display flex
-	//display -webkit-flex
-	//flex-direction row
-	//-webkit-flex-direction row
-	//justify-content space-around
-	//-webkit-justify-content space-around
-	// margin-left 6
-	// margin-right 6%
-	// margin-top 8%
-	// margin-bottom 13%
-
-.icon
-	max-width 18%
-	min-width 100px
-	height auto
-=======
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 	text-align center
 	display flex
 	display -webkit-flex
@@ -118,10 +109,7 @@ body
 	margin-right 6%
 	margin-top 8%
 	margin-bottom 13%
-<<<<<<< HEAD
-=======
 	height 100%
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 
 .icon
 	max-width 15%
@@ -129,16 +117,6 @@ body
 	width 100%
 	height 100%
 
-<<<<<<< HEAD
-//Footer Styling
-//.footerContainer
-//	position absolute
-//	right 0
-//	left 0
-//	bottom 0
-//	padding 1em
-//	text-align center
-=======
 .chosenIcon
 	max-width 15%
 	max-height 15%
@@ -148,7 +126,6 @@ body
 	background-color: #f28d5f
 
 
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 
 
 // FULLPAGE STYLING
@@ -169,18 +146,11 @@ body
 	padding-left 2%
 	padding-right 2%
 
-<<<<<<< HEAD
-// .footerContainer
-// 	position absolute
-// 	bottom 1%
-// 	width 100%
-// 	height 100%
-=======
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 
 //	FOOTER STYLING
 
 .footerContainer
+	flex 2
 	display flex
 	display -webkit-flex
 	flex-direction row
@@ -195,29 +165,6 @@ body
 
 
 
-<<<<<<< HEAD
-.shopSite 
-  display flex
-  display -webkit-flex
-  flex-direction row
-  align-content space-between
-
-.container1 
-  display flex
-  display -webkit-flex
-  flex-direction column
-  justify-content space-around
-  align-items flex-start
-  width 50%
-
-.container2 
-  display flex
-  display -webkit-flex
-  flex-direction column
-  justify-content space-around
-  align-items flex-end
-  width 50%
-=======
 // COFFEE SHOP STYLING
 
 .shopSite
@@ -246,52 +193,19 @@ body
 	display -webkit-flex
 	flex-direction column
 	-webkit-flex-direction column
-	justify-content space-around
-	-webkit-justify-content space-around
-	align-items flex-end
-	-webkit-align-items flex-end
+	align-items left
+	justify-content left
 	width 50%
 	margin-right 5%
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
+	
 
 
 
 .shopInstagram 
-<<<<<<< HEAD
-	height: auto
-	width: 400px
-
-
-.shopHours 
-	font-family 'Raleway', sans-serif
-
-
-.container1 {
-	font-family: 'Raleway', sans-serif;
-	}
-
-
-.shopName 
-	height 50px;
-	width 300px;
-
-
-.shopName a:link 
-	color #E88D67
-	text-decoration none
-
-
-.shopName a:visited 
-    color: #E88D67
-
-
-.shopName a:hover 
-    color: #BB999C
-=======
 	height auto
 	width 350px
 	height 350px
-	background-color red
+	background-color #C0E6DE
 
 
 .shopHours 
@@ -306,7 +220,6 @@ body
 .shopName 
 	height 50px
 	width 300px
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
 
 .shopName a:link
 	color: #E88D67
@@ -318,15 +231,17 @@ body
 .shopName a:hover
 	color #BB999C
 
-<<<<<<< HEAD
-a:link 
-	text-decoration none
-=======
 .shopName a:active
 	color #COE6DE
 
 .socialButton
 	text-decoration none
 
->>>>>>> ca8b426ec73e9a6fea0c9a1587638c581a63cbf7
+// About page/modal box styling
 
+.aboutDiv
+	display inline-block
+	text-align center
+	margin-left 5px
+	margin-right 5px
+	
