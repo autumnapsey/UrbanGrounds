@@ -41,7 +41,7 @@
 
 	<p class="shop">{{coffeeshop}}</p>
 
-	<div ng-show="downtownList" class="downtownList shop" ng-model="coffeeshop">
+	<div class="downtownList shop" ng-model="coffeeshop">
 		<ul ng-show="neighborhoods.downtown">
 			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 		</ul>
