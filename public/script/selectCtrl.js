@@ -14,10 +14,8 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	$scope.midtownList = false;
 	$scope.newcenterList = false;
 	$scope.corktownList = false;
-	$scope.westVillageList = false;
-	$scope.hamtramckList = false;
 	$scope.easternMarketList = false;
-	$scope.rosedaleParkList = false;
+	
 
 	$scope.chooseInterest = function(interest){
 		console.log('a;sdlfjkas;dlfjk')

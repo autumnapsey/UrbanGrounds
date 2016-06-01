@@ -5,6 +5,8 @@ app.controller('displayCtrl', function($scope, coffeeService) {
 		$scope.coffeeShop = location.data.result;
 		$scope.getDescription = coffeeService.getDescription;
 		$scope.getFeatures = coffeeService.getFeatures;
+		$scope.getInstagram = coffeeService.getInstagram();
+
 		$scope.openNow = function(){
 			if(location.data.result.opening_hours.open_now === true){
 				return "Open Now";
@@ -13,4 +15,6 @@ app.controller('displayCtrl', function($scope, coffeeService) {
 			}
 		};
 	});
+
+
 });
