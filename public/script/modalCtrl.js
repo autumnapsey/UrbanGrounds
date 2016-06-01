@@ -1,3 +1,5 @@
+var app = angular.module('app');
+
 app.controller('modalCtrl', function($scope, coffeeService, ngDialog, $location){
     $scope.clickForAbout = function (){
         ngDialog.open({

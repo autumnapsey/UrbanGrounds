@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$.backstretch("../images/coffeeGrey.png");
 });
 
-var app = angular.module('app',['ngRoute, ngDialog']);
+var app = angular.module('app',['ngRoute', 'ngDialog']);
 
 app.config(function($routeProvider) {
 	$routeProvider
