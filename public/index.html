@@ -23,7 +23,7 @@
 	  		var js, fjs = d.getElementsByTagName(s)[0];
 	  		if (d.getElementById(id)) return;
 	  		js = d.createElement(s); js.id = id;
-	  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
+	  		// js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
 	  		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
@@ -38,13 +38,10 @@
 
 	<body ng-app="app">
 		<header>
-			<img src="images/UGlogo.png" id="logo" alt="Urban Grounds" />
+			<a href="#/"><img src="images/UGlogo.png" id="logo" alt="Urban Grounds"></a>
 			<h1></h1>
 		</header>
 		<div class="site">
-		<ul>
-			<li><a href="#/">Home</a></li>
-		</ul>
 		<ng-view></ng-view>
 		</div>
 	</body>

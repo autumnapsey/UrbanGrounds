@@ -5,7 +5,7 @@ var stylus = require("gulp-stylus");
 
 
 
-gulp.task("stylus", function(){
+gulp.task('stylus', function(){
 	return gulp.src('./main.styl')
 		.pipe(stylus())
 		.pipe(gulp.dest("./public/style"));
@@ -23,6 +23,6 @@ gulp.task('browser-sync', function() {
             baseDir: "./public"
         }
     });
-	gulp.watch(["public/*.html", "*.js", "*.styl"], ["jshint", 'stylus', "browser-sync"])
+	gulp.watch(["public/*.html", "*.js", "*.styl"], ["jshint", "stylus", "browser-sync"])
 	.on("change", browserSync.reload);
 });
