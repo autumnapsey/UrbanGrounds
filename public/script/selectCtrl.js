@@ -2,6 +2,7 @@ var app = angular.module('app');
 
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	var lastElement = {};
+	var lastNeighbourhoodElement = {};
 
 	$scope.chooseShop = function (region,num){
 		coffeeService.getShop(region,num);
@@ -10,18 +11,31 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 
 	$scope.places = coffeeService.places;
 
-	$scope.downtownList = false;
-	$scope.midtownList = false;
-	$scope.newcenterList = false;
-	$scope.corktownList = false;
-	$scope.westVillageList = false;
-	$scope.hamtramckList = false;
-	$scope.easternMarketList = false;
-	$scope.rosedaleParkList = false;
+	$scope.neighborhoods = {
+		downtown: false,
+		midtown: false,
+		newCenter: false,
+		corktown: false,
+		easternMarket: false
+	};
+
+	$scope.showNeighborhoodShops = function(neighborhood) {
+		$scope.neighborhoods[neighborhood] = true;
+		for (hood in $scope.neighborhoods){ // for (key in obj){}
+			console.log(hood, neighborhood);
+			if(hood !== neighborhood) {
+				$scope.neighborhoods[hood] = false;
+			}
+		}
+		console.log($scope.neighborhoods);
+	}
+
 
 	$scope.chooseInterest = function(interest){
-		console.log('a;sdlfjkas;dlfjk')
+		// console.log('a;sdlfjkas;dlfjk')
+		$scope.places = {};
 		$scope.places = coffeeService.selectCategory(interest);
+
 	};
 
 
@@ -29,7 +43,7 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 
 	$scope.class = "icon";
 	$scope.changeInterestClass = function(event){
-		console.log(event);
+		// console.log(event);
 		var element = event.target;
 		if(isObjectEmpty(lastElement)){
 			$(lastElement).removeClass('chosenIcon').addClass('icon');
@@ -49,20 +63,20 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 
 	$scope.neighbourhoodClass = "neighbourhoodIcon";
 	$scope.changeNeighbourhoodClass = function(event){
-		console.log(event);
+		// console.log(event);
 		var element = event.target;
-		if(isNeighbourhoodObjectEmpty(lastElement)){
-			$(lastElement).removeClass("chosenNeighbourhoodIcon").addClass("neighbourhoodIcon");
+		if(isNeighbourhoodObjectEmpty(lastNeighbourhoodElement)){
+			$(lastNeighbourhoodElement).removeClass("chosenNeighbourhoodIcon").addClass("neighbourhoodIcon");
 		}
 
 		$(element).addClass("chosenNeighbourhoodIcon");
 
-		lastElement = event.target;
+		lastNeighbourhoodElement = event.target;
 
 	}
 
 	function isNeighbourhoodObjectEmpty(element) {
-		return Object.keys(lastElement).length > 0;
+		return Object.keys(element).length > 0;
 	}
 
 

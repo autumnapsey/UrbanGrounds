@@ -28,11 +28,11 @@
 
 
 <div class="neighbourhoodIconContainer">
-			<img src="../images/neighbourhoodIcons/circleCorktown.png" ng-click="corktownList = !corktownList; changeNeighbourhoodClass($event)" id="corktown" ng-class="neighbourhoodClass" />
-			<img src="../images/neighbourhoodIcons/circleEasternMarket.png" ng-click="easternMarketList = !easternMarketList; changeNeighbourhoodClass($event)" id="easternMarket" ng-class="neighbourhoodClass" />
-			<img src="../images/neighbourhoodIcons/circleDowntown.png" ng-click="downtownList = !downtownList; changeNeighbourhoodClass($event)" id="downtown" ng-class="neighbourhoodClass" />
-			<img src="../images/neighbourhoodIcons/circleNewCenter.png" ng-click="newcenterList = !newcenterList; changeNeighbourhoodClass($event)" id="newcenter" ng-class="neighbourhoodClass" />
-	    <img src="../images/neighbourhoodIcons/circleMidtown.png" ng-click="midtownList = !midtownList; changeNeighbourhoodClass($event)" id="midtown" ng-class="neighbourhoodClass" />
+			<img src="../images/neighbourhoodIcons/circleCorktown.png" ng-click="showNeighborhoodShops('corktown'); changeNeighbourhoodClass($event)" id="corktown" ng-class="neighbourhoodClass" />
+			<img src="../images/neighbourhoodIcons/circleEasternMarket.png" ng-click="showNeighborhoodShops('easternMarket'); changeNeighbourhoodClass($event)" id="easternMarket" ng-class="neighbourhoodClass" />
+			<img src="../images/neighbourhoodIcons/circleDowntown.png" ng-click="showNeighborhoodShops('downtown'); changeNeighbourhoodClass($event)" id="downtown" ng-class="neighbourhoodClass" />
+			<img src="../images/neighbourhoodIcons/circleNewCenter.png" ng-click="showNeighborhoodShops('newCenter'); changeNeighbourhoodClass($event)" id="newcenter" ng-class="neighbourhoodClass" />
+	    <img src="../images/neighbourhoodIcons/circleMidtown.png" ng-click="showNeighborhoodShops('midtown'); changeNeighbourhoodClass($event)" id="midtown" ng-class="neighbourhoodClass" />
 </div>
 
 <h2 clsss="coffeePickerheader" id="coffeePicker">Now choose your coffee shop!</h2>
@@ -42,50 +42,33 @@
 	<p class="shop">{{coffeeshop}}</p>
 
 	<div ng-show="downtownList" class="downtownList shop" ng-model="coffeeshop">
-		<ul ng-show="downtownList">
+		<ul ng-show="neighborhoods.downtown">
 			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="midtownMap" class="midtownList shop" ng-model="coffeeshop">
-		<ul ng-show="midtownList">
+		<ul ng-show="neighborhoods.midtown">
 			<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="newCenterMap" class="newCenterList shop" ng-model="coffeeshop">
-		<ul ng-show="newcenterList">
+		<ul ng-show="neighborhoods.newCenter">
 			<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="corktownMap" class="corktownList shop" ng-model="coffeeshop">
-		<ul ng-show="corktownList">
+		<ul ng-show="neighborhoods.corktown">
 			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
-	<div class="westVillageMap" class="westVillageList shop" ng-model="coffeeshop">
-		<ul ng-show="westVillageList">
-			<li ng-repeat="store in places.westVillage track by $index" ng-click="chooseShop(places.westVillage,$index)">{{store.name}}</li>
-		</ul>
-	</div>
-
-	<div class="hamtramckMap" class="hamtramckList shop" ng-model="coffeeshop">
-		<ul ng-show="hamtramckList">
-			<li ng-repeat="store in places.hamtramck track by $index" ng-click="chooseShop(places.hamtramck,$index)">{{store.name}}</li>
-		</ul>
-	</div>
 
 	<div class="easternMarketMap" class="easternMarketList shop" ng-model="coffeeshop">
-		<ul ng-show="easternMarketList">
+		<ul ng-show="neighborhoods.easternMarket">
 			<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>
-		</ul>
-	</div>
-
-	<div class="rosedaleMap" class="rosedaleParkList" ng-model="coffeeshop">
-		<ul ng-show="rosedaleParkList">
-			<li ng-repeat="store in places.rosedalePark track by $index" ng-click="chooseShop(places.rosedalePark,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
