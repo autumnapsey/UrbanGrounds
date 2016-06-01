@@ -45,16 +45,6 @@ body {
   font-family: robotoCondensed;
   src: url("../fonts/Roboto-Condensed.ttf");
 }
-.neighbourhoodContainer {
-  flex: 2;
-  display: flex;
-  display: -webkit-flex;
-  color: #000;
-  text-shadow: 10px;
-  margin-top: 5%;
-  text-align: center;
-  width: 100%;
-}
 .neighbourhoodIconContainer {
   display: flex;
   display: -webkit-flex;
@@ -102,6 +92,17 @@ li {
 li:hover {
   color: #f28d5f;
   cursor: pointer;
+}
+.neighbourhoodContainer {
+  flex: 2;
+  display: flex;
+  display: -webkit-flex;
+  color: #000;
+  text-shadow: 10px;
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 .iconContainer {
   text-align: center;
