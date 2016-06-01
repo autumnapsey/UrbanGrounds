@@ -72,7 +72,7 @@ app.factory('coffeeService', function($http){
 				all: true
 			},
 			{
-				name: 'Detroit Athletic Club Cafe',
+				name: 'The DAC Cafe',
 				placeID: 'ChIJddBmfDItO4gRRlJjD-hy6cc',
 				description: '',
 				features: '',

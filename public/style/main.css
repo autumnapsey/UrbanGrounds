@@ -89,11 +89,14 @@ body {
   margin-top: 5%;
   margin-bottom: 2%;
 }
-.downtownList {
+li {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  list-style: none;
   color: #000;
   list-style: none;
   letter-spacing: 0.21em;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: robotoCondensed;
 }
 li:hover {
