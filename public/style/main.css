@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-background-image url("../images/coffeeGrey.png")*/,
->>>>>>> f4c2a63c7056832fe93d53bd9d97da48949432e0
+background-image url("../images/coffeeGrey.png"),
 ul {
   list-style: none;
   text-align: left;
@@ -46,15 +43,27 @@ body {
 }
 .neighbourhoodContainer {
   flex: 2;
+  display: flex;
+  display: -webkit-flex;
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
   text-align: center;
   width: 100%;
 }
-.map {
-  height: auto;
+.neighbourhoodIconContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.neighbourhoodIcon {
+  max-width: 10%;
+  max-height: 10%;
   width: 100%;
+  height: 100%;
 }
 .downtownList {
   background-color: #d9d9d9;
@@ -69,24 +78,6 @@ body {
   position: absolute;
   left: 30%;
   top: 170%;
-}
-@media (max-width: 875px) {
-  .neighbourhoodContainer {
-    max-width: 100%;
-    margin-left: 0px;
-  }
-}
-@media (max-width: 690px) {
-  .downtownMap,
-  .midtownMap,
-  .corktownMap,
-  .westVillageMap,
-  .newCenterMap,
-  .easternMarketMap,
-  .rosedaleMap,
-  .hamtramckMap {
-    position: static;
-  }
 }
 .iconContainer {
   text-align: center;
@@ -129,7 +120,7 @@ body {
   padding-right: 2%;
 }
 .footerContainer {
-  flex: 2;
+  flex: 3;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
