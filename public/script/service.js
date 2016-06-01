@@ -338,28 +338,24 @@ app.factory('coffeeService', function($http){
 		return filteredPlaces;
 	}
 
-	var neighborhood = {
+	var neighborhoodValues = {
 		downtownList: false,
 		midtownList: false,
 		newcenterList: false,
 		corktownList: false,
-		westVillageList: false,
-		hamtramckList: false,
 		easternMarketList: false,
-		rosedaleParkList: false
 	};
 
-	function changeListShow(area){
-		console.log('changeListShow in service firing')
-		if(neighborhood.area === false){
-			return neighborhood.area = true;
-		} else {
-			return neighborhood.area = false;
-		}	
+	function showDowntown(){
+		console.log('2. showDowntown service working');
+		neighborhoodValues.downtownList = true;
+		console.log('3. '+ neighborhoodValues.downtownList);
 	}
 
+
 	return {
-		changeListShow: changeListShow,
+		neighborhoodValues: neighborhoodValues,
+		showDowntown: showDowntown,
 		getDescription: getDescription,
 		getFeatures: getFeatures,
 		getLink: getLink,

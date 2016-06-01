@@ -1,6 +1,8 @@
-
-	<div ng-show="downtownList" class="downtownList">
-		<ul ng-show="downtownList">
+<p>Blah blah blah</p>
+<div ng-controller="modalCtrl">
+	<div class="downtownList">
+		<ul ng-show="getList()">
+			ng-show is showing.
 			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
