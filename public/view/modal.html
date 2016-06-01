@@ -1,51 +1,33 @@
 <p>Blah blah blah</p>
-<div ng-controller="modalCtrl">
+<div ng-controller="modalCtrl" ng-init="listFromCategory()">
 	<div class="downtownList">
-		<ul ng-show="getList()">
-			ng-show is showing.
+		<ul ng-show="getList('downtownList')">
 			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="midtownMap">
-		<ul ng-show="midtownList">
+		<ul ng-show="getList('midtownList')">
 			<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="newCenterMap">
-		<ul ng-show="newcenterList">
+		<ul ng-show="getList('newCenterList')">
 			<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
-	<div class="corktownMap">
+	<div class="getList('corktownList')">
 		<ul ng-show="corktownList">
 			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
-	<div class="westVillageMap">
-		<ul ng-show="westVillageList">
-			<li ng-repeat="store in places.westVillage track by $index" ng-click="chooseShop(places.westVillage,$index)">{{store.name}}</li>
-		</ul>
-	</div>
-
-	<div class="hamtramckMap">
-		<ul ng-show="hamtramckList">
-			<li ng-repeat="store in places.hamtramck track by $index" ng-click="chooseShop(places.hamtramck,$index)">{{store.name}}</li>
-		</ul>
-	</div>
-
-	<div class="easternMarketMap">
+	<div class="getList('easternMarketList')">
 		<ul ng-show="easternMarketList">
 			<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>
 		</ul>
 	</div>
 
-	<div class="rosedaleMap">
-		<ul ng-show="rosedaleParkList">
-			<li ng-repeat="store in places.rosedalePark track by $index" ng-click="chooseShop(places.rosedalePark,$index)">{{store.name}}</li>
-		</ul>
-	</div>
 </div>

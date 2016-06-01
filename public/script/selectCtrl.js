@@ -11,7 +11,9 @@ app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog
 	$scope.places = coffeeService.places;
 
 	$scope.chooseInterest = function(interest){
-		$scope.places = coffeeService.selectCategory(interest);
+		coffeeService.saveInterest(interest);
+	//	$scope.places = coffeeService.selectCategory(interest);
+
 	};
 
 	$scope.class = "icon";
@@ -31,9 +33,8 @@ app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog
 		return Object.keys(lastElement).length > 0;
 	}
 
-	$scope.showDowntown = function (){
-		console.log('1. showDowntown on selectCtrl');
-		coffeeService.showDowntown();
+	$scope.showNeighborhood = function(place){
+		coffeeService.showNeighborhood(place);
 	}
 
 	$scope.clickToOpen = function (){

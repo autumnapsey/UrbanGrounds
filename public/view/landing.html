@@ -12,11 +12,11 @@
 
 <div class="neighbourhoodContainer">
 	<ul>
-		<li ng-click="clickToOpen(); showDowntown()" id="downtown">Downtown</li>
-		<li ng-click="midtown = !midtown" id="midtown">Midtown</li>
-		<li ng-click="corktown = !corktown" id="corktown">Corktown</li>
-		<li ng-click="newCenter = !newCenter" id="newCenter">New Center</li>
-		<li ng-click="easternMarket = !easternMarket" id="easternMarket">Eastern Market</li>
+		<li ng-click="clickToOpen(); showNeighborhood('downtownList')" id="downtown">Downtown</li>
+		<li ng-click="clickToOpen(); showNeighborhood('midtownList')" id="midtown">Midtown</li>
+		<li ng-click="clickToOpen(); showNeighborhood('corktownList')" id="corktown">Corktown</li>
+		<li ng-click="clickToOpen(); showNeighborhood('newCenterList')" id="newCenter">New Center</li>
+		<li ng-click="clickToOpen(); showNeighborhood('downtownList')" id="easternMarket">Eastern Market</li>
 	</ul>
 
 </div>

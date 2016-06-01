@@ -311,6 +311,8 @@ app.factory('coffeeService', function($http){
 		]
 	};
 
+	var chosenInterest = "";
+
 	var selectedShop;
 
 	var filteredPlaces = {};
@@ -335,6 +337,8 @@ app.factory('coffeeService', function($http){
 				});
 			}
 		}
+		console.log('interest ' + interest);
+		console.log('selectCategory ' + filteredPlaces);
 		return filteredPlaces;
 	}
 
@@ -346,16 +350,29 @@ app.factory('coffeeService', function($http){
 		easternMarketList: false,
 	};
 
-	function showDowntown(){
-		console.log('2. showDowntown service working');
-		neighborhoodValues.downtownList = true;
-		console.log('3. '+ neighborhoodValues.downtownList);
+	function showNeighborhood(place){
+		console.log('2. showNeighborhood service working');
+		neighborhoodValues[place] = true;
+	//	console.log('3. '+ neighborhoodValues.downtownList);
+		console.log(neighborhoodValues);
+	}
+
+	function saveInterest(interest){
+		chosenInterest = interest;
+
 	}
 
 
 	return {
-		neighborhoodValues: neighborhoodValues,
-		showDowntown: showDowntown,
+		saveInterest: saveInterest,
+		chosenInterest: function(){
+			return chosenInterest;
+		},
+		neighborhoodValue: function(){
+			console.log('service value return ' + neighborhoodValues);
+			return neighborhoodValues;
+		},
+		showNeighborhood: showNeighborhood,
 		getDescription: getDescription,
 		getFeatures: getFeatures,
 		getLink: getLink,
