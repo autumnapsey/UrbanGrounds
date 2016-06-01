@@ -20,5 +20,9 @@ app.config(function($routeProvider) {
 	.when('/coffeeshop', {
 		templateUrl: '../view/coffee.html',
 		controller: 'displayCtrl'
+	})
+	.when('/about', {
+		templateUrl: '../view/about.html',
+		controller: 'aboutCtrl'
 	});
 });

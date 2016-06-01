@@ -175,10 +175,10 @@ li:hover {
   flex: 3;
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  align-content: space-between;
+  flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 13%;
   margin-bottom: 0%;
   font-size: 0.8em;
