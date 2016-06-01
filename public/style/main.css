@@ -131,6 +131,18 @@ li:hover {
   margin-left: 6%;
   margin-top: 0;
   margin-bottom: 5%;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  font-style: robotoCondensed;
+}
+.work {
+  margin-left: 1%;
+}
+.coffee {
+  text-align: center;
+}
+.centred {
+  text-align: center;
 }
 .icon {
   max-width: 15%;
