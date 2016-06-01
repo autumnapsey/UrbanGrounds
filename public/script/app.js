@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$.backstretch("../images/coffeebg.jpeg");
-});
 
+	$.backstretch("../images/coffeeGrey.png");
+});
 
 var app = angular.module('app',['ngRoute']);
 

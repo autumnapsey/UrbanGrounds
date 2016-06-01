@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+
+
+background-image url("../images/coffeeGrey.png")*/
+
+// .rioGlamour
+// 	font-family rioGlamour
+// 	letter-spacing .25em
+
+>>>>>>> f4c2a63c7056832fe93d53bd9d97da48949432e0
 
 // BASIC STYLING
 
@@ -7,6 +18,8 @@ ul
 
 header
 	background-image url("../images/honey_im_subtle.png")
+	// margin 0px
+	// padding 0px
 	text-align center
 	margin-left 9%
 	margin-right 9%
@@ -14,6 +27,7 @@ header
 	padding-bottom 2%
 	padding-left 2%
 	padding-right 2%
+	border-bottom 20px solid #C0E6DE
 
 #logo
 	width 75%
@@ -45,22 +59,34 @@ body
 	src url(../fonts/Roboto-Bold.ttf)
 
 
-// MAP STYLING
+// NEIGHBOURHOOD STYLING
 
 .neighbourhoodContainer
 	flex 2
+	display flex
+	display -webkit-flex
 	color white
 	text-shadow 10px
 	margin-top 5%
-	margin-left 10%
-	margin-right 10%
+	//margin-left 10%
+	//margin-right 10%
 	text-align center
-	max-width 80%
+	//max-width 80%
 	width 100%
 
-.map
-	height auto
+.neighbourhoodIconContainer
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
+	justify-content space-around
+	-webkit-justify-content space-around
+
+.neighbourhoodIcon
+	max-width 10%
+	max-height 10%
 	width 100%
+	height 100%
 
 .downtownList
 	background-color #d9d9d9
@@ -76,22 +102,10 @@ body
 	left 30%
 	top 170%
 
-@media (max-width: 875px) {
-	.neighbourhoodContainer	{
-		max-width: 100%;
-		margin-left: 0px;
-	}
-}
-
-@media (max-width: 690px) {
-	.downtownMap, .midtownMap, .corktownMap, .westVillageMap, .newCenterMap, .easternMarketMap, .rosedaleMap, .hamtramckMap {
-		position: static;
-	}
-}
 
 
 
-// ICON STYLING
+// INTEREST ICON STYLING
 
 .iconContainer
 	text-align center
@@ -106,7 +120,6 @@ body
 	margin-top 8%
 	margin-bottom 13%
 	height 100%
-
 
 .icon
 	max-width 15%
@@ -128,10 +141,10 @@ body
 // FULLPAGE STYLING
 
 .site
-	display flex
-	display -webkit-flex
-	flex-direction column
-	-webkit-flex-direction column
+	//display flex
+	//display -webkit-flex
+	//flex-direction column
+	//-webkit-flex-direction column
 	min-height 100vh
 	background-color rgba(255, 255, 255, .95)
 	margin-left 9%
@@ -147,7 +160,7 @@ body
 //	FOOTER STYLING
 
 .footerContainer
-	flex 2
+	flex 3
 	display flex
 	display -webkit-flex
 	flex-direction row
@@ -171,7 +184,6 @@ body
 	-webkit-flex-direction row
 	align-content space-between
 
-
 .container1
 	display flex
 	display -webkit-flex
@@ -181,7 +193,7 @@ body
 	-webkit-justify-content space-around
 	align-items flex-start
 	-webkit-align-items flex-start
-
+	width 50%
 
 
 .container2
@@ -193,3 +205,40 @@ body
 	-webkit-justify-content space-around
 	align-items flex-end
 	-webkit-align-items flex-end
+	width 50%
+
+
+.shopInstagram
+	height auto
+	width 350px
+	height 350px
+	background-color red
+
+
+.shopHours
+	font-family Raleway, sans-serif
+
+
+.container1
+	font-family Raleway, sans-serif
+
+
+.shopName
+	height 50px
+	width 300px
+
+.shopName a:link
+	color: #E88D67
+	text-decoration none
+
+.shopName a:visited
+	color #E88D67
+
+.shopName a:hover
+	color #BB999C
+
+.shopName a:active
+	color #COE6DE
+
+.socialButton
+	text-decoration none

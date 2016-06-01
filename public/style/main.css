@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+background-image url("../images/coffeeGrey.png")*/,
+>>>>>>> f4c2a63c7056832fe93d53bd9d97da48949432e0
 ul {
   list-style: none;
   text-align: left;
@@ -11,6 +15,7 @@ header {
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
+  border-bottom: 20px solid #c0e6de;
 }
 #logo {
   width: 75%;
@@ -44,10 +49,7 @@ body {
   color: #fff;
   text-shadow: 10px;
   margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: center;
-  max-width: 80%;
   width: 100%;
 }
 .map {
@@ -115,10 +117,6 @@ body {
   background-color: #f28d5f;
 }
 .site {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
   min-height: 100vh;
   background-color: rgba(255,255,255,0.95);
   margin-left: 9%;
@@ -159,6 +157,7 @@ body {
   -webkit-justify-content: space-around;
   align-items: flex-start;
   -webkit-align-items: flex-start;
+  width: 50%;
 }
 .container2 {
   display: flex;
@@ -169,4 +168,37 @@ body {
   -webkit-justify-content: space-around;
   align-items: flex-end;
   -webkit-align-items: flex-end;
+  width: 50%;
+}
+.shopInstagram {
+  height: auto;
+  width: 350px;
+  height: 350px;
+  background-color: #f00;
+}
+.shopHours {
+  font-family: Raleway, sans-serif;
+}
+.container1 {
+  font-family: Raleway, sans-serif;
+}
+.shopName {
+  height: 50px;
+  width: 300px;
+}
+.shopName a:link {
+  color: #e88d67;
+  text-decoration: none;
+}
+.shopName a:visited {
+  color: #e88d67;
+}
+.shopName a:hover {
+  color: #bb999c;
+}
+.shopName a:active {
+  color: #ccc OE6DE;
+}
+.socialButton {
+  text-decoration: none;
 }
