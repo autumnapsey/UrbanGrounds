@@ -353,15 +353,12 @@ app.factory('coffeeService', function($http){
 	function showNeighborhood(place){
 		console.log('2. showNeighborhood service working');
 		neighborhoodValues[place] = true;
-	//	console.log('3. '+ neighborhoodValues.downtownList);
 		console.log(neighborhoodValues);
 	}
 
 	function saveInterest(interest){
 		chosenInterest = interest;
-
 	}
-
 
 	return {
 		saveInterest: saveInterest,
