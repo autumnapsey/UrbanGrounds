@@ -327,7 +327,7 @@ app.factory('coffeeService', function($http){
 		return selectedShop.features;
 	}
 	function getShop(region,shop){
-				selectedShop = region[shop];
+		selectedShop = region[shop];
 	}
 	function selectCategory(interest){
 		for (neighborhood in places){
@@ -337,8 +337,6 @@ app.factory('coffeeService', function($http){
 				});
 			}
 		}
-		console.log('interest ' + interest);
-		console.log('selectCategory ' + filteredPlaces);
 		return filteredPlaces;
 	}
 
@@ -351,9 +349,7 @@ app.factory('coffeeService', function($http){
 	};
 
 	function showNeighborhood(place){
-		console.log('2. showNeighborhood service working');
 		neighborhoodValues[place] = true;
-		console.log(neighborhoodValues);
 	}
 
 	function saveInterest(interest){
@@ -366,7 +362,6 @@ app.factory('coffeeService', function($http){
 			return chosenInterest;
 		},
 		neighborhoodValue: function(){
-			console.log('service value return ' + neighborhoodValues);
 			return neighborhoodValues;
 		},
 		showNeighborhood: showNeighborhood,

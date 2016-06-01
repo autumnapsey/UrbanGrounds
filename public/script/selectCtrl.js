@@ -40,7 +40,7 @@ app.controller('selectCtrl', function($scope, coffeeService, $location, ngDialog
 	$scope.clickToOpen = function (){
         ngDialog.open({ 
         	template: '../view/modal.html', 
-        	className: 'ngdialog-theme-default' 
+        	className: 'ngdialog-theme-default',
         });
     };
 });

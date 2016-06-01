@@ -1,32 +1,31 @@
-<p>Blah blah blah</p>
 <div ng-controller="modalCtrl" ng-init="listFromCategory()">
 	<div class="downtownList">
 		<ul ng-show="getList('downtownList')">
-			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index)">{{store.name}}</li>
+			<li ng-repeat="store in places.downtown track by $index" ng-click="chooseShop(places.downtown,$index); closeThisDialog()">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="midtownMap">
 		<ul ng-show="getList('midtownList')">
-			<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index)">{{store.name}}</li>
+			<li ng-repeat="store in places.midtown track by $index" ng-click="chooseShop(places.midtown,$index); closeThisDialog()">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="newCenterMap">
 		<ul ng-show="getList('newCenterList')">
-			<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index)">{{store.name}}</li>
+			<li ng-repeat="store in places.newCenter track by $index" ng-click="chooseShop(places.newCenter,$index); closeThisDialog()">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="corktownMap">
 		<ul ng-show="getList('corktownList')">
-			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
+			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index); closeThisDialog()">{{store.name}}</li>
 		</ul>
 	</div>
 
 	<div class="easternMarketMap">
 		<ul ng-show="getList('easternMarketList')">
-			<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index)">{{store.name}}</li>
+			<li ng-repeat="store in places.easternMarket track by $index" ng-click="chooseShop(places.easternMarket,$index); closeThisDialog()">{{store.name}}</li>
 		</ul>
 	</div>
 
