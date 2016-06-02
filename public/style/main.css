@@ -50,7 +50,7 @@ body {
   -webkit-flex-direction: row;
   justify-content: space-around;
   -webkit-justify-content: space-around;
-  margin-top: 10%;
+  margin-top: 6.5%;
   margin-left: 6%;
   margin-right: 6%;
 }
@@ -70,7 +70,9 @@ body {
   background-color: #f28d5f;
 }
 .neighbourhoodPickerHeader {
-  margin-bottom: 10%;
+  margin-bottom: 0%;
+  font-size: 3.5em;
+  margin-top: 15%;
 }
 .mapContainer {
   display: flex;
@@ -80,18 +82,19 @@ body {
   background-color: #ff0;
 }
 .map {
-  margin-top: 11%;
+  margin-top: 6%;
   margin-bottom: 17%;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 50%;
+  max-height: 50%;
   width: 100%;
   height: 100%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .coffeePickerHeader {
   margin-top: 5%;
   margin-bottom: 2%;
+  font-size: 3.5em;
 }
 li {
   padding-top: 2.5%;
@@ -100,8 +103,10 @@ li {
   color: #000;
   list-style: none;
   letter-spacing: 0.21em;
-  font-size: 1.7em;
+  font-size: 3em;
   font-family: robotoCondensed;
+  align-items: center;
+  text-align: center;
 }
 li:hover {
   color: #f28d5f;
@@ -116,6 +121,8 @@ li:hover {
   margin-top: 10%;
   margin-bottom: 20%;
   text-align: center;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   width: 100%;
 }
@@ -173,9 +180,12 @@ li:hover {
   border-radius: 50%;
   background-color: #f28d5f;
 }
+.interestPickerHeader {
+  font-size: 3.5em;
+}
 .site {
   min-height: 100vh;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255,0.85);
   margin-left: 9%;
   margin-right: 9%;
   margin-bottom: 0px;
@@ -227,6 +237,7 @@ li:hover {
   -webkit-align-items: flex-start;
   width: 50%;
   margin-left: 5%;
+  font-size: 1.7em;
 }
 .container2 {
   display: flex;
@@ -238,6 +249,7 @@ li:hover {
   width: 50%;
   margin-right: 5%;
   margin-left: 10%;
+  font-size: 1.4em;
 }
 .shopInstagram {
   height: auto;
@@ -287,6 +299,8 @@ li:hover {
 background-color
   padding-left: 8%;
   padding-right: 8%;
+  height: 100%;
+  width: 100%;
 }
 .linksContainer {
   display: flex;
@@ -298,7 +312,6 @@ background-color
   color: #f28d5f;
   font-size: 1.5em;
   letter-spacing: 0.07em;
-  padding-top: 4%;
 }
 .bio {
   font-size: 0.8em;
