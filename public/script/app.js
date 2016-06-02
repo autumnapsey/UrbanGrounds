@@ -1,11 +1,4 @@
 $(document).ready(function(){
-
-	$("#downtown").scrollTo("#coffeePicker"[300]);
-	$("#midtown").scrollTo("#coffeePicker"[300]);
-	$("#corktown").scrollTo("#coffeePicker"[300]);
-	$("#newcenter").scrollTo("#coffeePicker"[300]);
-	$("#easternMarket").scrollTo("#coffeePicker"[300]);
-
 	$.backstretch("../images/coffeeGrey.png");
 });
 
@@ -18,7 +11,7 @@ app.config(function($routeProvider, $sceDelegateProvider) {
 	  // Allow loading from our assets domain.  Notice the difference between * and **.
 	  'https://snapwidget.com/embed/**'
 	]);
-	
+
 	$routeProvider
 	.when('/', {
 		templateUrl: '../view/landing.html',

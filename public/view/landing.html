@@ -1,11 +1,11 @@
 <h2>First pick what your interest is...</h2>
 
 <div class="iconContainer">
-	<img ng-class="class" ng-click="chooseInterest('music'); changeInterestClass($event)" src="../images/icons/EntertainmentCircle.png" title="Entertainment"/>
-	<img ng-class="class" ng-click="chooseInterest('work'); changeInterestClass($event)" src="../images/icons/WorkCircle.png" title="Productivity"/>
-	<img ng-class="class" ng-click="chooseInterest('food'); changeInterestClass($event)" src="../images/icons/FoodCircle.png" title="Food"/>
-	<img ng-class="class" ng-click="chooseInterest('social'); changeInterestClass($event)" src="../images/icons/SocialCircle.png" title="Socialising"/>
-	<img ng-class="class" ng-click="chooseInterest('all'); changeInterestClass($event)"src="../images/icons/CoffeeCircle.png" title="I don't care, just give me coffee."/>
+	<img ng-class="class" ng-click="chooseInterest('music'); changeInterestClass($event)" src="../images/icons/EntertainmentCircle.png" title="Entertainment" id="musicButton" />
+	<img ng-class="class" ng-click="chooseInterest('work'); changeInterestClass($event)" src="../images/icons/WorkCircle.png" title="Productivity" id="workButton" />
+	<img ng-class="class" ng-click="chooseInterest('food'); changeInterestClass($event)" src="../images/icons/FoodCircle.png" title="Food" id="foodButton" />
+	<img ng-class="class" ng-click="chooseInterest('social'); changeInterestClass($event)" src="../images/icons/SocialCircle.png" title="Socialising" id="socialButton" />
+	<img ng-class="class" ng-click="chooseInterest('all'); changeInterestClass($event)"src="../images/icons/CoffeeCircle.png" title="I don't care, just give me coffee." id="coffeeButton" />
 </div>
 <div class="iconLabels">
 	<div class="music">
@@ -31,12 +31,14 @@
 			<img src="../images/neighbourhoodIcons/circleCorktown.png" ng-click="showNeighborhoodShops('corktown'); changeNeighbourhoodClass($event)" id="corktown" ng-class="neighbourhoodClass" />
 			<img src="../images/neighbourhoodIcons/circleEasternMarket.png" ng-click="showNeighborhoodShops('easternMarket'); changeNeighbourhoodClass($event)" id="easternMarket" ng-class="neighbourhoodClass" />
 			<img src="../images/neighbourhoodIcons/circleDowntown.png" ng-click="showNeighborhoodShops('downtown'); changeNeighbourhoodClass($event)" id="downtown" ng-class="neighbourhoodClass" />
-			<img src="../images/neighbourhoodIcons/circleNewCenter.png" ng-click="showNeighborhoodShops('newCenter'); changeNeighbourhoodClass($event)" id="newcenter" ng-class="neighbourhoodClass" />
-	    <img src="../images/neighbourhoodIcons/circleMidtown.png" ng-click="showNeighborhoodShops('midtown'); changeNeighbourhoodClass($event)" id="midtown" ng-class="neighbourhoodClass" />
+			<img src="../images/neighbourhoodIcons/circleNewCenter.png" ng-click="showNeighborhoodShops('newCenter'); changeNeighbourhoodClass($event)" id="newCenter" ng-class="neighbourhoodClass" />
+	    	<img src="../images/neighbourhoodIcons/circleMidtown.png" ng-click="showNeighborhoodShops('midtown'); changeNeighbourhoodClass($event)" id="midtown" ng-class="neighbourhoodClass" />
 </div>
 
 <div class="mapContainer">
 	<img src="../images/mapSections/mapSelectAll.png" class="map" id="map">
+
+	<!-- <img src="../images/mapSections/mapSelectDowntown.png" class="map" id="downtownMap"> -->
 </div>
 
 <h2 clsss="coffeePickerheader" id="coffeePicker">Now choose your coffee shop!</h2>
@@ -68,7 +70,6 @@
 			<li ng-repeat="store in places.corktown track by $index" ng-click="chooseShop(places.corktown,$index)">{{store.name}}</li>
 		</ul>
 	</div>
-
 
 	<div class="easternMarketMap" class="easternMarketList shop" ng-model="coffeeshop">
 		<ul ng-show="neighborhoods.easternMarket">
