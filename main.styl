@@ -87,7 +87,7 @@ body
 	flex-direction row
 
 
-#corktown:hover + .mapContainer 
+#corktown:hover + .mapContainer
 	background-color: yellow
 
 .map
@@ -224,6 +224,16 @@ li:hover
 	padding-left 2%
 	padding-right 2%
 
+	a:link
+		color black
+		text-decoration none
+	a:visited
+		color black
+		text-decoration none
+	a:hover
+		color #f28d5f
+		text-decoration none
+
 
 
 
@@ -300,16 +310,45 @@ li:hover
 .socialButton
 	text-decoration none
 
+
+	// ABOUT PAGE STYLING
+
 .headshot
 	height 100%
 	width 100%
-	max-height 50%
-	max-width 50%
+	max-height 100%
+	max-width 100%
 
 .headshotContainer
 	display flex
 	display -webkit-flex
-	background-color red
+	flex-direction column
+	-webkit-flex-direction column
+	//justify-content center
+	align-items center
+	background-color
+	padding-left 8%
+	padding-right 8%
+
+.linksContainer
+	display flex
+	display -webkit-flex
+	flex-direction row
+	-webkit-flex-direction row
+
+.links
+	color #f28d5f
+	font-size 1.5em
+	letter-spacing .07em
+	padding-top 4%
+
+.bio
+	font-size .8em
+
+
+.name
+	font-size 1.9em
+	letter-spacing .07em
 
 .aboutContainer
 	display flex
@@ -318,3 +357,10 @@ li:hover
 	-webkit-flex-direction row
 	align-content space-between
 	-webkit-align-content space-between
+	background-color #217217217
+	font-family robotoCondensed
+	color #242424
+	padding-top 10%
+	padding-left 8%
+	margin-right 8%
+	padding-bottom 10%
