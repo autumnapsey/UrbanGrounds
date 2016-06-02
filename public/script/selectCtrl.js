@@ -8,31 +8,31 @@ $(document).ready(function(){
 		$('.map').attr('src', '/images/mapSections/mapSelectDowntown.png');
 		}, function() {
 		});
-		$('#downtown').attr('src','/images/neighbourhoodIcons/circleDowntown.png');
+		$('.map').attr('src','/images/mapSections/mapSelectAll.png');
 	
 
 	$('#corktown').hover(function(){
 		$('.map').attr('src', '/images/mapSections/mapSelectCorktown.png');
 		}, function() {
-		$('#corktown').attr('src','/images/neighbourhoodIcons/circleCorktown.png');
+		$('.map').attr('src','/images/mapSections/mapSelectAll.png');
 	});
 
 	$('#easternMarket').hover(function(){
 		$('.map').attr('src', '/images/mapSections/mapSelectEasternMarket.png');
 		}, function() {
-		$('#easternMarket').attr('src','/images/neighbourhoodIcons/circleEasternMarket.png');
+		$('.map').attr('src','/images/mapSections/mapSelectAll.png');
 	});
 
 	$('#newCenter').hover(function(){
 		$('.map').attr('src', '/images/mapSections/mapSelectNewCenter.png');
 		}, function() {
-		$('#newCenter').attr('src','/images/neighbourhoodIcons/circleNewCenter.png');
+		$('.map').attr('src','/images/mapSections/mapSelectAll.png');
 	});
 
 	$('#midtown').hover(function(){
 		$('.map').attr('src', '/images/mapSections/mapSelectMidtown.png');
 		}, function() {
-		$('#midtown').attr('src','/images/neighbourhoodIcons/circleMidtown.png');
+		$('.map').attr('src','/images/mapSections/mapSelectAll.png');
 	});
 });
 
