@@ -260,3 +260,22 @@ li:hover {
 .socialButton {
   text-decoration: none;
 }
+.headshot {
+  height: 100%;
+  width: 100%;
+  max-height: 50%;
+  max-width: 50%;
+}
+.headshotContainer {
+  display: flex;
+  display: -webkit-flex;
+  background-color: #f00;
+}
+.aboutContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-content: space-between;
+  -webkit-align-content: space-between;
+}
