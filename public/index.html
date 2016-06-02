@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
 	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog.min.css"></script>
 	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog-theme-default.min.css"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o&libraries=places"></script>
@@ -37,6 +39,14 @@
 		var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
 		if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 	</script>
+
+	<!--meta tags-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Urban Grounds is an app to find the perfect coffee shop for you in Detroit.">
+	<meta name="keywords" content="coffee, Detroit, coffee shop">
+	<meta name="author" content="Autumn Apsey, Rose Ryan Campau, Veronica Williams">
+
+
 </head>
 
 	<body ng-app="app">
@@ -49,7 +59,7 @@
 		</div>
 		<div class="footerContainer" ng-controller="modalCtrl">
 			<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
-			<p ng-click="clickForAbout()"><a href="">Learn more about us and get in touch.</a></P>
+			<p ng-click="clickForAbout()"><a href="">Learn more about us and get in touch.</a></p>
 		</div>
 	</body>
 </html>
