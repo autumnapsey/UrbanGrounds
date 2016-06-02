@@ -3,27 +3,70 @@ var app = angular.module('app');
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
 
 // jQuery scrollTo events
-	$('#downtown').click(function(){
-		console.log('screen should scroll');
-		$(window).scrollTo($("#coffeePicker"),800);
+		
+	$(document).ready(function(){
+		$('#downtown').click(function(){
+			$(window).scrollTo($("#coffeePicker"),800);
+		});
+		$('#midtown').click(function(){
+			$(window).scrollTo($("#coffeePicker"),800);
+		});
+		$('#corktown').click(function(){
+			$(window).scrollTo($("#coffeePicker"),800);
+		});
+		$('#newCenter').click(function(){
+			$(window).scrollTo($("#coffeePicker"),800);
+		});
+		$('#easternMarket').click(function(){
+			$(window).scrollTo($("#coffeePicker"),800);
+		});
+		$('#musicButton').click(function(){
+			$(window).scrollTo($("#neighbourhoodPicker"),800);
+		});
+		$('#workButton').click(function(){
+			$(window).scrollTo($("#neighbourhoodPicker"),800);
+		});
+		$('#foodButton').click(function(){
+			$(window).scrollTo($("#neighbourhoodPicker"),800);
+		});
+		$('#socialButton').click(function(){
+			$(window).scrollTo($("#neighbourhoodPicker"),800);
+		});
+		$('#coffeeButton').click(function(){
+			$(window).scrollTo($("#neighbourhoodPicker"),800);
+		});
+
+		$('#downtown').hover(function(){
+			$('.map').attr('src', '/images/mapSections/mapSelectDowntown.png');
+			}, function() {
+			});
+			$('.map').attr('src','/images/mapSections/mapSelectAll.png');
+		
+
+		$('#corktown').hover(function(){
+			$('.map').attr('src', '/images/mapSections/mapSelectCorktown.png');
+			}, function() {
+			$('.map').attr('src','/images/mapSections/mapSelectAll.png');
+		});
+
+		$('#easternMarket').hover(function(){
+			$('.map').attr('src', '/images/mapSections/mapSelectEasternMarket.png');
+			}, function() {
+			$('.map').attr('src','/images/mapSections/mapSelectAll.png');
+		});
+
+		$('#newCenter').hover(function(){
+			$('.map').attr('src', '/images/mapSections/mapSelectNewCenter.png');
+			}, function() {
+			$('.map').attr('src','/images/mapSections/mapSelectAll.png');
+		});
+
+		$('#midtown').hover(function(){
+			$('.map').attr('src', '/images/mapSections/mapSelectMidtown.png');
+			}, function() {
+			$('.map').attr('src','/images/mapSections/mapSelectAll.png');
+		});
 	});
-	$('#midtown').click(function(){
-		console.log('screen should scroll');
-		$(window).scrollTo($("#coffeePicker"),800);
-	});
-	$('#corktown').click(function(){
-		console.log('screen should scroll');
-		$(window).scrollTo($("#coffeePicker"),800);
-	});
-	$('#newcenter').click(function(){
-		console.log('screen should scroll');
-		$(window).scrollTo($("#coffeePicker"),800);
-	});
-	$('#easternMarket').click(function(){
-		console.log('screen should scroll');
-		$(window).scrollTo($("#coffeePicker"),800);
-	});
-// end events
 
 	var lastElement = {};
 	var lastNeighbourhoodElement = {};
@@ -34,6 +77,7 @@ app.controller('selectCtrl', function($scope, coffeeService, $location) {
 	};
 
 	$scope.places = coffeeService.places;
+
 
 	$scope.neighborhoods = {
 		downtown: false,

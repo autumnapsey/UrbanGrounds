@@ -76,6 +76,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+#corktown:hover + .mapContainer {
+  background-color: #ff0;
+}
 .map {
   margin-top: 11%;
   margin-bottom: 17%;

@@ -6,8 +6,6 @@ ul
 
 header
 	background-image url("../images/honey_im_subtle.png")
-	// margin 0px
-	// padding 0px
 	text-align center
 	margin-left 9%
 	margin-right 9%
@@ -86,8 +84,11 @@ body
 
 .mapContainer
 	display flex
-	//background-color red
 	flex-direction row
+
+
+#corktown:hover + .mapContainer 
+	background-color: yellow
 
 .map
 	margin-top 11%
@@ -103,9 +104,6 @@ body
 
 
 // COFFEE SHOP LIST STYLING
-
-//.downtownList
-	//background-color #d9d9d9
 
 
 .coffeePickerHeader
@@ -201,10 +199,6 @@ li:hover
 // FULLPAGE STYLING
 
 .site
-	//display flex
-	//display -webkit-flex
-	//flex-direction column
-	//-webkit-flex-direction column
 	min-height 100vh
 	background-color rgba(255, 255, 255, .95)
 	margin-left 9%
