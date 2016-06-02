@@ -78,7 +78,7 @@ app.factory('coffeeService', function($http){
 				all: true
 			},
 			{
-				name: 'Detroit Athletic Club Cafe',
+				name: 'The DAC Cafe',
 				placeID: 'ChIJddBmfDItO4gRRlJjD-hy6cc',
 				instagramID: '180615',
 				description: '',
@@ -220,7 +220,7 @@ app.factory('coffeeService', function($http){
 // needs categories
 			}
 		],
-	
+
 		easternMarket: [
 			{
 				name: 'Trinosophes',
