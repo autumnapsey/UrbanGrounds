@@ -1,6 +1,30 @@
 var app = angular.module('app');
 
 app.controller('selectCtrl', function($scope, coffeeService, $location) {
+
+// jQuery scrollTo events
+	$('#downtown').click(function(){
+		console.log('screen should scroll');
+		$(window).scrollTo($("#coffeePicker"),800);
+	});
+	$('#midtown').click(function(){
+		console.log('screen should scroll');
+		$(window).scrollTo($("#coffeePicker"),800);
+	});
+	$('#corktown').click(function(){
+		console.log('screen should scroll');
+		$(window).scrollTo($("#coffeePicker"),800);
+	});
+	$('#newcenter').click(function(){
+		console.log('screen should scroll');
+		$(window).scrollTo($("#coffeePicker"),800);
+	});
+	$('#easternMarket').click(function(){
+		console.log('screen should scroll');
+		$(window).scrollTo($("#coffeePicker"),800);
+	});
+// end events
+
 	var lastElement = {};
 	var lastNeighbourhoodElement = {};
 

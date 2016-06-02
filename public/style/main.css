@@ -175,7 +175,7 @@ li:hover {
   background-color: rgba(255,255,255,0.95);
   margin-left: 9%;
   margin-right: 9%;
-  margin-bottom: 4%;
+  margin-bottom: 0px;
   align-content: vertical;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -183,17 +183,15 @@ li:hover {
   padding-right: 2%;
 }
 .footerContainer {
-  flex: 3;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 13%;
-  margin-bottom: 0%;
-  font-size: 0.8em;
-  letter-spacing: 0.13em;
+  background-color: #c0e6de;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 4%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .shopSite {
   display: flex;

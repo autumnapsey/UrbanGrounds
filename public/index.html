@@ -5,11 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
 	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog.min.css"></script>
 	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog-theme-default.min.css"></script>
-	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog-custom-width.css"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o&libraries=places"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="script/ngDialog.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="script/app.js"></script>
@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="script/selectCtrl.js"></script>
 	<script type="text/javascript" src="script/displayCtrl.js"></script>
 	<script type="text/javascript" src="script/service.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!-- LightWidget WIDGET --><!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fdd28c2ac01b5133b9230c5a55e5e922.html" id="lightwidget_fdd28c2ac0" name="lightwidget_fdd28c2ac0"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
 
@@ -48,10 +48,10 @@
 		</header>
 		<div class="site">
 		<ng-view></ng-view>
+		</div>
 		<div class="footerContainer" ng-controller="modalCtrl">
 			<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
 			<p ng-click="clickForAbout()"><a href="">Learn more about us and get in touch.</a></P>
-		</div>
 		</div>
 	</body>
 </html>
