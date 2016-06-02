@@ -271,7 +271,6 @@ app.factory('coffeeService', function($http){
 				all: true
 			}
 		]
-
 	};
 
 	var selectedShop;

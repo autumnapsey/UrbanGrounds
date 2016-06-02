@@ -47,6 +47,7 @@ $(document).ready(function(){
 
 	$scope.places = coffeeService.places;
 
+
 	$scope.neighborhoods = {
 		downtown: false,
 		midtown: false,

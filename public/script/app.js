@@ -18,7 +18,7 @@ app.config(function($routeProvider, $sceDelegateProvider) {
 	  // Allow loading from our assets domain.  Notice the difference between * and **.
 	  'https://snapwidget.com/embed/**'
 	]);
-	
+
 	$routeProvider
 	.when('/', {
 		templateUrl: '../view/landing.html',
