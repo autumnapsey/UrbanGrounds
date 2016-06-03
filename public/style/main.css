@@ -71,7 +71,7 @@ body {
 }
 .neighbourhoodPickerHeader {
   margin-bottom: 0%;
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-top: 15%;
 }
 .mapContainer {
@@ -94,7 +94,7 @@ body {
 .coffeePickerHeader {
   margin-top: 5%;
   margin-bottom: 2%;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 li {
   padding-top: 2.5%;
@@ -141,7 +141,6 @@ li:hover {
   height: 100%;
 }
 .iconLabels {
-  text-align: center;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -150,20 +149,15 @@ li:hover {
   -webkit-justify-content: space-around;
   margin-right: 6%;
   margin-left: 6%;
-  margin-top: 0;
-  margin-bottom: 5%;
-  font-size: 1em;
-  letter-spacing: 0.15em;
-  font-style: robotoCondensed;
+  margin-top: 0px;
+  height: 100%;
 }
-.work {
-  margin-left: 1%;
-}
-.coffee {
-  text-align: center;
-}
-.centred {
-  text-align: center;
+.label {
+  max-width: 15%;
+  max-height: 15%;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5%;
 }
 .icon {
   max-width: 15%;
@@ -181,11 +175,11 @@ li:hover {
   background-color: #f28d5f;
 }
 .interestPickerHeader {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .site {
   min-height: 100vh;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(247,247,247,0.95);
   margin-left: 9%;
   margin-right: 9%;
   margin-bottom: 0px;
@@ -334,4 +328,32 @@ background-color
   padding-left: 8%;
   margin-right: 8%;
   padding-bottom: 10%;
+}
+.notWorkingContainer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-family: robotoCondensed;
+  padding-top: 4%;
+  padding-left: 8%;
+  margin-right: 8%;
+  padding-bottom: 4%;
+}
+.notWorkingHeader {
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1.1;
+}
+#corsLink:link {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+#corsLink:visited {
+  color: #000;
+  text-decoration: none;
+}
+#corsLink:hover {
+  color: #f28d5f;
+  text-decoration: none;
 }
