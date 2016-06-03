@@ -7,7 +7,7 @@ app.factory('coffeeService', function($http){
 				name: 'ASHE Supply Co.',
 				placeID: 'ChIJtzwfLTItO4gRxwpKgcgFomE',
 				instagramID: '180026',
-				description: "Detroit has new kid on the coffee block, ASHE Supply Co. feels like it is already well established in the neighborhood. Serving the many startups that share the M@dison Building, the coffee shop has blazing fast Rocket Fiber wifi. It serves up Detroit food favorites like Detroit Institute of Bagels and Sister Pie, making it a great place to work or meet up with friends.",
+				description: "Detroit has a new kid on the coffee block, ASHE Supply Co. It feels like it is already well established in the neighborhood though. Serving the many startups that share the M@dison Building, the coffee shop has blazing fast Rocket Fiber wifi. It serves up Detroit food favorites like Detroit Institute of Bagels and Sister Pie, making it a great place to work or meet up with friends.",
 				features: 'house-roasted coffee, fast wifi, cool clothes, local fare',
 				work: true,
 				food: true,

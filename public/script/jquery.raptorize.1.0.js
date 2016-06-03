@@ -29,19 +29,19 @@
 			// 	audioSupported = true;
 			// }
 
-// Autumn editing stuff for randomization of images
-			var imageArray = [
-				'raptor.png',
-				'CoffeeCircle.png'
-			];
+// // Autumn editing stuff for randomization of images
+// 			var imageArray = [
+// 				'raptor.png',
+// 				'CoffeeCircle.png'
+// 			];
 
-			var randomImage = Math.floor((Math.random()*imageArray.length));
-			var getRandomImage = imageArray[randomImage];
-// doesn't randomize on each click, only first click.
+// 			var randomImage = Math.floor((Math.random()*imageArray.length));
+// 			var getRandomImage = imageArray[randomImage];
+// // doesn't randomize on each click, only first click.
 
 			
 			//Raptor Vars
-			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="images/raptorize/' + imageArray[randomImage] + '" />'
+			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="images/raptorize/james.png" />'
 			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="raptor-sound.mp3" /><source src="raptor-sound.ogg" /></audio>';	
 			var locked = false;
 			
@@ -59,13 +59,13 @@
 			function init() {
 				locked = true;
 			
-				//Sound Hilarity
-				if(audioSupported) { 
-					function playSound() {
-						document.getElementById('elRaptorShriek').play();
-					}ƒ
-					playSound();
-				}
+				// //Sound Hilarity
+				// if(audioSupported) { 
+				// 	function playSound() {
+				// 		document.getElementById('elRaptorShriek').play();
+				// 	}ƒ
+				// 	playSound();
+				// }
 								
 				// Movement Hilarity	
 				raptor.animate({
