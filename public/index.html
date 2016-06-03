@@ -3,14 +3,15 @@
 <head>
 	<title>Urban Grounds</title>
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
-	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog.min.css"></script>
-	<link rel= "stylesheet" type = "text/css" href="/style/ngDialog-theme-default.min.css"></script>
+	<link rel= "stylesheet" type="text/css" href="/style/ngDialog.min.css"></script>
+	<link rel= "stylesheet" type="text/css" href="/style/ngDialog-theme-default.min.css"></script>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3qOjxMH_B5zFUt9V4KKU0_MgXaXDd26o&libraries=places"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="script/jquery.raptorize.1.0.js"></script>
 	<script src="script/ngDialog.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="script/app.js"></script>
@@ -39,7 +40,6 @@
 		if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 	</script>
 
-	<!--meta tags-->
 	<link href="images/favicon.ico?" rel="icon" type="image/x-icon" />
 	<meta charset="UTF-8">
 	<meta name="description" content="Urban Grounds is an app to find the perfect coffee shop for you in Detroit.">
@@ -47,19 +47,17 @@
 	<meta name="author" content="Autumn Apsey, Rose Ryan Campau, Veronica Williams">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-
 </head>
 
 	<body ng-app="app">
 		<header>
 			<a href="#/"><img src="images/UGlogo.png" id="logo" alt="Urban Grounds"></a>
-			<h1></h1>
 		</header>
 		<div class="site">
-		<ng-view></ng-view>
+			<ng-view></ng-view>
 		</div>
 		<div class="footerContainer" ng-controller="modalCtrl">
-			<p>Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
+			<p class="button">Website designed by Autumn Apsey, Rosalie Ryan Campau, and Veronica Williams</p>
 			<p ng-click="clickForAbout()"><a href="" class="footerLink" >Learn more about us and get in touch.</a></p>
 			<p ng-click="viewHelp()"><a href="" class="footerLink">Site not working?</a></p>
 		</div>
